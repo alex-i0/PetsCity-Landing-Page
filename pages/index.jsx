@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
+import SocialMediaTile from '../components/SocialMediaTile/SocialMediaTile';
 import styles from '../scss/pages/index.module.scss';
+import { socialMediaData } from '../data/socialMedia';
 
 const Home = () => (
   <div>
@@ -27,7 +29,18 @@ const Home = () => (
           <button>Explore the platform</button>
         </div>
 
-        <div className={styles.socialLinkGroup}></div>
+        <div className={styles.socialLinkGroup}>
+          {socialMediaData.map(({ name, link, icon }, index) => {
+            return (
+              <SocialMediaTile
+                value={name}
+                link={link}
+                icon={icon}
+                key={index}
+              />
+            );
+          })}
+        </div>
       </div>
       <div className={styles.imageContainer}>
         <img

@@ -9,6 +9,10 @@ body {
   background-color: $background-color;
   font-size: 10px;
 
+  a:visited {
+    color: inherit;
+  }
+
   button {
     border: 0;
     padding: 0.7rem;
