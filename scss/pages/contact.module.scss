@@ -12,8 +12,9 @@
   .header {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
     font-size: 1.6rem;
+    padding: 3rem;
     font-weight: 300;
 
     .title {
@@ -66,7 +67,7 @@
   .imageContainer {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 55%;
 
     .image {
       width: 100%;

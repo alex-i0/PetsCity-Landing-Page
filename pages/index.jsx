@@ -3,8 +3,16 @@ import Navbar from '../components/Navbar/Navbar';
 import SocialMediaTile from '../components/SocialMediaTile/SocialMediaTile';
 import TextSwitch from '../components/TextSwitch/TextSwitch';
 import Contact from './contact';
+import dynamic from 'next/dynamic';
 import styles from '../scss/pages/index.module.scss';
 import { socialMediaData } from '../data/socialMedia';
+
+// const DynamicComponentWithNoSSR = dynamic(
+//   () => import('../components/Messenger/Messenger'),
+//   { ssr: false }
+// );
+//
+// Await for credentials
 
 const Home = () => (
   <div>
