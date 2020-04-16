@@ -6,7 +6,7 @@ const links = [
     link: '#services',
   },
   {
-    name: 'About us',
+    name: 'Vision',
     link: '#aboutus',
   },
   {
@@ -17,7 +17,10 @@ const links = [
 
 const Navbar = () => (
   <nav className={styles.nav}>
-    <div className={styles.logo}> PetsCity</div>
+    <a className={styles.logo} href="/">
+      {' '}
+      PetsCity
+    </a>
     <div className={styles.menu}>
       {links.map(({ name, link }, index) => {
         return (

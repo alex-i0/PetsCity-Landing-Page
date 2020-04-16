@@ -9,6 +9,7 @@
   padding: 0.5rem;
   border-radius: $radius;
   transition: background-color 0.4s;
+  color: inherit;
 
   &:hover {
     background-color: $highlight-color;

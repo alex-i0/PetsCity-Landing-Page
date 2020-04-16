@@ -3,12 +3,12 @@ import Checkbox from '../components/Checkbox/Checkbox';
 import styles from '../scss/pages/contact.module.scss';
 
 const Contact = () => (
-  <div className={styles.contact}>
+  <div className={styles.contact} id="contact">
     <div className={styles.header}>
-      <h2 className={styles.title}>Stand for Wildlife</h2>
+      <h2 className={styles.title}>Sign Up and Stand Still</h2>
       <p className={styles.description}>
-        Join a community of over 200 breeders helping protect pets and wildelife
-        we love. We count on you.
+        We are still working on the platform. We will keep you informed about
+        all future plans and changes.
       </p>
       <div className={styles.formContainer}>
         <form className={styles.form}>
@@ -21,8 +21,11 @@ const Contact = () => (
           <div className={styles.checkbox}>
             <Checkbox />
             <label className={styles.checkboxText}>
-              By signing up you agree to data processing described in our
-              privacy policy
+              By clicking Sign Up, you agree to our Terms. Learn how we collect
+              and use data in{' '}
+              <a className={styles.highlight} href="/data-policy">
+                Data Policy
+              </a>
             </label>
           </div>
 

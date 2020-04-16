@@ -18,6 +18,12 @@ const Home = () => (
   <div>
     <Head>
       <title>PetsCity</title>
+
+      <meta
+        name="description"
+        content="Join to Pets City today! Get access to hundreds of certified breeders."
+      />
+
       <link rel="icon" href="/favicon.ico" />
       <link
         rel="apple-touch-icon"
@@ -56,10 +62,12 @@ const Home = () => (
         </p>
 
         <div className={styles.buttonGroup}>
-          <button className={styles.buttonOutlineHighlight}>
+          <a className={styles.buttonOutlineHighlight} href="#services">
             Explore the platform
-          </button>
-          <button className={styles.buttonHighlight}>Sign up for free</button>
+          </a>
+          <a className={styles.buttonHighlight} href="#contact">
+            Sign up for free
+          </a>
         </div>
 
         <div className={styles.socialLinkGroup}>

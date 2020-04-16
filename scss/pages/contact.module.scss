@@ -46,9 +46,17 @@
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          align-items: center;
 
           .checkboxText {
-            font-size: 1rem;
+            font-size: 0.8rem;
+
+            .highlight {
+              color: $main-color;
+              cursor: pointer;
+              text-decoration: none;
+              font-weight: 400;
+            }
           }
         }
 

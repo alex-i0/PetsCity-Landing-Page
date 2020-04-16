@@ -33,9 +33,21 @@
       font-size: 1.2rem;
 
       .buttonOutlineHighlight {
+        border: 0;
+        padding: 0.7rem;
+        border-radius: $radius;
+        cursor: pointer;
+        background-color: buttonface;
+        text-decoration: none;
       }
 
       .buttonHighlight {
+        border: 0;
+        padding: 0.7rem;
+        border-radius: $radius;
+        cursor: pointer;
+        background-color: buttonface;
+        text-decoration: none;
       }
     }
 
