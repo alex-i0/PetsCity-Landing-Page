@@ -1,0 +1,75 @@
+@import '../variables.scss';
+
+.contact {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 10rem;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    .title {
+      font-weight: 500;
+      margin-bottom: 0rem;
+    }
+
+    .description {
+      margin-bottom: 6rem;
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+
+    .formContainer {
+      .form {
+        display: flex;
+        flex-direction: column;
+
+        .emailInput {
+          border: 0;
+          border-bottom: 2px solid $main-color;
+          outline: 0;
+          margin-bottom: 20px;
+        }
+
+        .checkbox {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .checkboxText {
+            font-size: 1rem;
+          }
+        }
+
+        .submit {
+          width: 10rem;
+          padding: 0.5rem;
+          background-color: transparent;
+          border: 2px solid $main-color;
+          border-radius: $radius;
+          cursor: pointer;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+
+    .image {
+      width: 100%;
+    }
+  }
+}

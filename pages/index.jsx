@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
 import SocialMediaTile from '../components/SocialMediaTile/SocialMediaTile';
 import TextSwitch from '../components/TextSwitch/TextSwitch';
+import Contact from './contact';
 import styles from '../scss/pages/index.module.scss';
 import { socialMediaData } from '../data/socialMedia';
 
@@ -53,6 +54,7 @@ const Home = () => (
         />
       </div>
     </div>
+    <Contact />
   </div>
 );
 
