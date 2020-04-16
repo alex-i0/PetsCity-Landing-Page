@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
 import SocialMediaTile from '../components/SocialMediaTile/SocialMediaTile';
 import TextSwitch from '../components/TextSwitch/TextSwitch';
+import Overview from './overview';
 import Contact from './contact';
 import dynamic from 'next/dynamic';
 import styles from '../scss/pages/index.module.scss';
@@ -82,6 +83,7 @@ const Home = () => (
         />
       </div>
     </div>
+    <Overview />
     <Contact />
   </div>
 );

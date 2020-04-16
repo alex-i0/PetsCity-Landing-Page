@@ -23,7 +23,7 @@
     }
 
     .description {
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
       font-size: 1.5rem;
       text-align: justify;
     }
@@ -36,6 +36,7 @@
         .emailInput {
           border: 0;
           border-bottom: 2px solid $main-color;
+          padding: 0.4rem 0.1rem;
           outline: 0;
           margin-bottom: 20px;
         }
