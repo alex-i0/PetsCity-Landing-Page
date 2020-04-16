@@ -12,12 +12,15 @@ const Contact = () => (
       </p>
       <div className={styles.formContainer}>
         <form className={styles.form}>
-          <input
-            type="email"
-            className={styles.emailInput}
-            placeholder="Email address"
-            required
-          />
+          <label className={styles.label}>
+            xxxx
+            <input
+              type="email"
+              className={styles.emailInput}
+              placeholder="Email address"
+              required
+            />
+          </label>
           <div className={styles.checkbox}>
             <Checkbox />
             <label className={styles.checkboxText}>

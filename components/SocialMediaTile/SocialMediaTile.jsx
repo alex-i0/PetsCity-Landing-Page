@@ -8,6 +8,7 @@ const SocialMediaTile = ({ value, link, icon }) => (
     href={link}
     target="_blank"
     rel="noopener"
+    title={`${value} icon`}
   >
     <FontAwesomeIcon icon={icon} className={styles.fontAwesomeIcon} />
   </a>
