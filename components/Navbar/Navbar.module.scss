@@ -1,4 +1,5 @@
 @import '../../scss/variables.scss';
+
 .nav {
   display: flex;
   justify-content: center;
@@ -27,6 +28,8 @@
       padding: 0.5rem;
       transition: background-color 0.4s;
       border-radius: $radius;
+      text-decoration: none;
+      color: inherit;
 
       &:hover {
         background-color: $highlight-color;

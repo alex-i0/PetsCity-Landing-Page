@@ -26,8 +26,10 @@ const Home = () => (
         </p>
 
         <div className={styles.buttonGroup}>
-          <button>Start free trial</button>
-          <button>Explore the platform</button>
+          <button className={styles.buttonOutlineHighlight}>
+            Explore the platform
+          </button>
+          <button className={styles.buttonHighlight}>Sign up for free</button>
         </div>
 
         <div className={styles.socialLinkGroup}>

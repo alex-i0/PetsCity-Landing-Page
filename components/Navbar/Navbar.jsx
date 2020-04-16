@@ -20,7 +20,11 @@ const Navbar = () => (
     <div className={styles.logo}> PetsCity</div>
     <div className={styles.menu}>
       {links.map(({ name, link }, index) => {
-        return <a className={styles.menuItem}>{name}</a>;
+        return (
+          <a className={styles.menuItem} href={link} key={index}>
+            {name}
+          </a>
+        );
       })}
       <span className={styles.vr} />
       <a className={styles.menuItemHighlight}>For Breeders</a>
