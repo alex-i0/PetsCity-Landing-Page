@@ -86,7 +86,7 @@ const Home = () => (
       <div className={styles.imageContainer}>
         <img
           className={styles.image}
-          src="/assets/office.jpg"
+          src="/assets/office.webp"
           alt="Office with parrot"
         />
       </div>
