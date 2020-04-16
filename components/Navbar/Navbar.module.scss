@@ -18,7 +18,7 @@
 
   .menu {
     display: flex;
-    width: 30%;
+    width: 40%;
     justify-content: space-around;
     margin-left: auto;
 
@@ -26,10 +26,23 @@
       cursor: pointer;
       padding: 0.5rem;
       transition: background-color 0.4s;
+      border-radius: $radius;
 
       &:hover {
         background-color: $highlight-color;
-        border-radius: $radius;
+        transition: background-color 0.4s;
+      }
+    }
+
+    .menuItemHighlight {
+      cursor: pointer;
+      padding: 0.5rem;
+      transition: background-color 0.4s;
+      color: $main-color;
+      border-radius: $radius;
+
+      &:hover {
+        background-color: $highlight-color;
         transition: background-color 0.4s;
       }
     }

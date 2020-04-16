@@ -1,12 +1,29 @@
 import styles from './Navbar.module.scss';
 
+const links = [
+  {
+    name: 'Services',
+    link: '#services',
+  },
+  {
+    name: 'About us',
+    link: '#aboutus',
+  },
+  {
+    name: 'Contact',
+    link: '#contact',
+  },
+];
+
 const Navbar = () => (
   <nav className={styles.nav}>
     <div className={styles.logo}> PetsCity</div>
     <div className={styles.menu}>
-      <span className={styles.menuItem}>Services</span>
-      <span className={styles.menuItem}>About us</span>
-      <span className={styles.menuItem}>Contact</span>
+      {links.map(({ name, link }, index) => {
+        return <a className={styles.menuItem}>{name}</a>;
+      })}
+      <span className={styles.vr} />
+      <a className={styles.menuItemHighlight}>For Breeders</a>
     </div>
   </nav>
 );

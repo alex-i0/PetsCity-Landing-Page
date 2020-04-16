@@ -14,11 +14,12 @@
     .title {
       font-size: 3rem;
       font-weight: 500;
+    }
 
-      .highlight {
-        color: $main-color;
-        font-weight: 600;
-      }
+    .subtitle {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-top: -5rem;
     }
 
     .description {
@@ -36,7 +37,7 @@
       margin-top: 3rem;
       display: flex;
       justify-content: space-between;
-      width: 21%;
+      width: 28%;
       padding: 0.8rem;
       font-size: 1.1rem;
 

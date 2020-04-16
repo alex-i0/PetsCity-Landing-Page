@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
 import SocialMediaTile from '../components/SocialMediaTile/SocialMediaTile';
+import TextSwitch from '../components/TextSwitch/TextSwitch';
 import styles from '../scss/pages/index.module.scss';
 import { socialMediaData } from '../data/socialMedia';
 
@@ -15,9 +16,9 @@ const Home = () => (
     <div className={styles.jumbotron}>
       <div className={styles.header}>
         <h1 className={styles.title}>
-          Pick Your <span className={styles.highlight}>Pet</span>! <br />
-          Trust us.
+          <TextSwitch /> <br />
         </h1>
+        <h2 className={styles.subtitle}>We'll handle the rest.</h2>
         <p className={styles.description}>
           Pets City can provide prompt and flexible solutions
           <br />
