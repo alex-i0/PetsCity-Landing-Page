@@ -26,7 +26,7 @@ const Contact = () => (
             <label className={styles.checkboxText}>
               By clicking Sign Up, you agree to our Terms. Learn how we collect
               and use data in{' '}
-              <a className={styles.highlight} href="/data-policy">
+              <a className={styles.highlight} href="/data_policy">
                 Data Policy
               </a>
             </label>
