@@ -1,0 +1,22 @@
+@import '../../scss/variables.scss';
+
+.footer {
+  border-top: 2px solid $highlight-color;
+  height: 5rem;
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .text {
+    font-size: 0.8rem;
+
+    .highlight {
+      color: $main-color;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}

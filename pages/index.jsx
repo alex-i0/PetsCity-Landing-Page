@@ -4,6 +4,7 @@ import SocialMediaTile from '../components/SocialMediaTile/SocialMediaTile';
 import TextSwitch from '../components/TextSwitch/TextSwitch';
 import Overview from './overview';
 import Contact from './contact';
+import Footer from '../components/Footer/Footer';
 import dynamic from 'next/dynamic';
 import styles from '../scss/pages/index.module.scss';
 import { socialMediaData } from '../data/socialMedia';
@@ -48,7 +49,7 @@ const Home = () => (
       <meta name="theme-color" content="#d7e0fd" />
     </Head>
 
-    <Navbar text={' For Breeders '} link={'/breeders'} />
+    <Navbar />
     <div className={styles.jumbotron}>
       <div className={styles.header}>
         <h1 className={styles.title}>
@@ -93,6 +94,7 @@ const Home = () => (
     </div>
     <Overview />
     <Contact />
+    <Footer />
   </div>
 );
 

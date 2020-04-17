@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
 import { dataPolicy } from '../data/dataPolicy';
 import styles from '../scss/pages/data_policy.module.scss';
 
@@ -22,6 +23,7 @@ const data_policy = () => (
         ))}
       </section>
     </div>
+    <Footer />
   </div>
 );
 
