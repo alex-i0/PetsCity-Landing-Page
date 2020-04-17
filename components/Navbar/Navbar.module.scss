@@ -40,11 +40,14 @@
 
     .menuItemHighlight {
       cursor: pointer;
-      padding: 0.5rem;
+      padding: 0.5rem 1rem;
       transition: background-color 0.4s;
       color: $main-color;
       border-radius: $radius;
-      border: 1px solid $main-color;
+      border: 2px solid $main-color;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
 
       &:hover {
         background-color: $highlight-color;

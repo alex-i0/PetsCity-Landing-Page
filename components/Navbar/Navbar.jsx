@@ -15,7 +15,7 @@ const links = [
   },
 ];
 
-const Navbar = () => (
+const Navbar = ({ text, link }) => (
   <nav className={styles.nav}>
     <a className={styles.logo} href="/">
       {' '}
@@ -30,7 +30,9 @@ const Navbar = () => (
         );
       })}
       <span className={styles.vr} />
-      <a className={styles.menuItemHighlight}>For Breeders</a>
+      <a className={styles.menuItemHighlight} href={link}>
+        {text}
+      </a>
     </div>
   </nav>
 );

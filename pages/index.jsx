@@ -48,7 +48,7 @@ const Home = () => (
       <meta name="theme-color" content="#d7e0fd" />
     </Head>
 
-    <Navbar />
+    <Navbar text={' For Breeders '} link={'/breeders'} />
     <div className={styles.jumbotron}>
       <div className={styles.header}>
         <h1 className={styles.title}>
