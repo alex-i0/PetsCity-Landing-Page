@@ -3,15 +3,15 @@ import styles from './Navbar.module.scss';
 const links = [
   {
     name: 'Services',
-    link: '#services',
+    link: '/#services',
   },
   {
     name: 'Vision',
-    link: '#aboutus',
+    link: '/#aboutus',
   },
   {
     name: 'Contact',
-    link: '#contact',
+    link: '/#contact',
   },
 ];
 
