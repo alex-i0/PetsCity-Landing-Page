@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../partials.scss';
 
 .contact {
   display: flex;
@@ -39,12 +40,7 @@
           font-size: 0;
 
           .emailInput {
-            font-size: 25px;
-            width: 100%;
-            border: 0;
-            border-bottom: 2px solid $main-color;
-            padding: 0.4rem 0.1rem;
-            outline: 0;
+            @extend %textInput;
             margin-bottom: 20px;
           }
         }
@@ -69,12 +65,9 @@
         }
 
         .submit {
-          width: 10rem;
+          @extend %button;
           padding: 0.5rem;
-          background-color: transparent;
-          border: 2px solid $main-color;
-          border-radius: $radius;
-          cursor: pointer;
+          width: 8rem;
           margin-top: 2rem;
         }
       }

@@ -29,8 +29,10 @@ const Navbar = ({ text, link }) => (
         );
       })}
       <span className={styles.vr} />
-      <a className={styles.menuItemHighlight} href={link || '/breeders'}>
-        {text || 'For Breeders'}
+      <a href={link || '/breeders'}>
+        <button className={styles.menuItemHighlight}>
+          {text || 'For Breeders'}
+        </button>
       </a>
     </div>
   </nav>

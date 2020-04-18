@@ -1,7 +1,7 @@
 //CSS to refactor
+@import '../../scss/variables.scss';
 
 .checkbox {
-  --background: #fff;
   --border: #d1d6ee;
   --border-hover: #bbc1e1;
   --border-active: #4052f2;
@@ -19,7 +19,7 @@
     -moz-appearance: none;
     position: relative;
     outline: none;
-    background: var(--background);
+    background: $background-color;
     border: none;
     margin: 0;
     padding: 0;

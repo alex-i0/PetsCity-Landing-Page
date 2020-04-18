@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../partials.scss';
 
 .jumbotron {
   display: flex;
@@ -33,15 +34,11 @@
       font-size: 1.2rem;
 
       .buttonOutlineHighlight {
-        border: 0;
-        padding: 0.7rem;
-        border-radius: $radius;
-        cursor: pointer;
-        background-color: buttonface;
-        text-decoration: none;
+        @extend %button;
       }
 
       .buttonHighlight {
+        @extend %button;
         border: 0;
         padding: 0.7rem;
         border-radius: $radius;

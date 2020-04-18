@@ -1,4 +1,5 @@
 @import '../../scss/variables.scss';
+@import '../../scss/partials.scss';
 
 .nav {
   display: flex;
@@ -39,20 +40,9 @@
     }
 
     .menuItemHighlight {
-      cursor: pointer;
-      padding: 0.5rem 1rem;
-      transition: background-color 0.4s;
-      color: $main-color;
-      border-radius: $radius;
-      border: 2px solid $main-color;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1.1rem;
-
-      &:hover {
-        background-color: $highlight-color;
-        transition: background-color 0.4s;
-      }
+      @extend %button;
+      padding: 0.5rem;
+      width: 10rem;
     }
   }
 }

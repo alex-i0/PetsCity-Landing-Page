@@ -63,11 +63,13 @@ const Home = () => (
         </p>
 
         <div className={styles.buttonGroup}>
-          <a className={styles.buttonOutlineHighlight} href="#services">
-            Explore the platform
+          <a href="#services">
+            <button className={styles.buttonHighlight}>Explore</button>
           </a>
-          <a className={styles.buttonHighlight} href="#contact">
-            Sign up for free
+          <a href="#contact">
+            <button className={styles.buttonOutlineHighlight}>
+              Sign up for free
+            </button>
           </a>
         </div>
 

@@ -1,12 +1,9 @@
 @import '../../scss/variables.scss';
 
-$color: $main-color;
-
 .blockquote {
   font-size: 1.2rem;
   width: 80%;
-  border-left: 3px solid $color;
-  color: #1a1a1a;
+  border-left: 3px solid $main-color;
   font-style: italic;
   line-height: 1.8em;
   padding: 1em 2em;
@@ -19,7 +16,7 @@ $color: $main-color;
     top: 50%;
     left: -4px;
     height: 2em;
-    background-color: #fff;
+    background-color: $background-color;
     width: 5px;
     margin-top: -1em;
   }
@@ -28,7 +25,7 @@ $color: $main-color;
     position: absolute;
     top: 55%;
     left: -0.5em;
-    color: $color;
+    color: $main-color;
     font-style: normal;
     font-size: 1.8rem;
     font-weight: 700;
