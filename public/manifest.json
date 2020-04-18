@@ -3,7 +3,7 @@
   "short_name": "PetsCity",
   "theme_color": "#4052f2",
   "background_color": "#d7e0fd",
-  "display": "browser",
+  "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/",
