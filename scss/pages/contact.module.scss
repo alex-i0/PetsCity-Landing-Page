@@ -99,6 +99,21 @@
         margin-bottom: 2rem;
         font-size: 1.2rem;
       }
+
+      .formContainer {
+        .form {
+          .label {
+            .emailInput {
+              font-size: 1.3rem;
+            }
+          }
+          .checkbox {
+            .checkboxText {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
     }
   }
 }

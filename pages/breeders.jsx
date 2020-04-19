@@ -12,7 +12,7 @@ const breeders = () => {
       <Head>
         <title>PetsCity | Breeders</title>
       </Head>
-      <Navbar text={'For Pet Lovers'} link={'/'} />
+      <Navbar text={'For PLovers'} link={'/'} />
       <div className={styles.breedersBackground}>
         <img
           src="/assets/background.webp"

@@ -33,3 +33,31 @@
     flex: 1;
   }
 }
+
+@media (max-width: $breakpoint-laptop) {
+  .register {
+    padding: 8rem;
+
+    .contentContainer {
+      width: 50%;
+      padding: 4rem;
+
+      .header {
+        .title {
+          font-size: 2.2rem;
+        }
+
+        .description {
+          margin-bottom: 3.5rem;
+        }
+      }
+    }
+
+    .imageContainer {
+      min-width: 50%;
+      .image {
+        width: 100%;
+      }
+    }
+  }
+}

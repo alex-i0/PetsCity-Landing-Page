@@ -37,3 +37,18 @@
     width: 10rem;
   }
 }
+
+@media (max-width: $breakpoint-laptop) {
+  .form {
+    .emailInput,
+    .nameInput {
+      font-size: 1.3rem;
+    }
+
+    .checkbox {
+      .checkboxText {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

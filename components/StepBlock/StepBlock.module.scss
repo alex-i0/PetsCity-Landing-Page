@@ -42,3 +42,15 @@
 .stepBlockReverse {
   flex-direction: row-reverse;
 }
+
+@media (max-width: $breakpoint-laptop) {
+  .stepBlock {
+    width: 85%;
+
+    .contentContainer {
+      .title {
+        text-align: center;
+      }
+    }
+  }
+}
