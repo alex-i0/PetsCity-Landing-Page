@@ -81,6 +81,7 @@ const Overview = () => (
           height="240"
           autoPlay={true}
           loop
+          muted
         >
           <source src="/assets/dribbble.mp4" type="video/mp4" />
         </video>
