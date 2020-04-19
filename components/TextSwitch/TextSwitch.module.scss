@@ -190,6 +190,26 @@
   }
 }
 
+@media (max-width: $breakpoint-laptop) {
+  .content {
+    &__container {
+      &__list {
+        padding-left: 17.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .content {
+    &__container {
+      &__list {
+        padding-left: 13.5rem;
+      }
+    }
+  }
+}
+
 // 6 is the number of animation.
 // Here, there are 4 lines :
 

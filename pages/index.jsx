@@ -19,8 +19,8 @@ const Home = () => (
   <div>
     <Head>
       <title>PetsCity</title>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta charSet="utf-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta
         name="viewport"
         content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
@@ -66,9 +66,8 @@ const Home = () => (
         </h1>
         <h2 className={styles.subtitle}>We'll handle the rest.</h2>
         <p className={styles.description}>
-          Pets City can provide prompt and flexible solutions
-          <br />
-          for a full range professional and business needs
+          Pets City can provide prompt and flexible solutions for a full range
+          professional and business needs
         </p>
 
         <div className={styles.buttonGroup}>
@@ -76,9 +75,7 @@ const Home = () => (
             <button className={styles.buttonHighlight}>Explore</button>
           </a>
           <a href="#contact">
-            <button className={styles.buttonOutlineHighlight}>
-              Sign up for free
-            </button>
+            <button className={styles.buttonOutlineHighlight}>Join Now</button>
           </a>
         </div>
 
@@ -98,7 +95,7 @@ const Home = () => (
       <div className={styles.imageContainer}>
         <img
           className={styles.image}
-          src="/assets/office.webp"
+          src="/assets/office.jpg"
           alt="Office with parrot"
         />
       </div>

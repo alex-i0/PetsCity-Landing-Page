@@ -64,7 +64,7 @@ const Overview = () => (
           <div className={styles.profileImage}>
             <img
               className={styles.image}
-              src="/assets/profile.webp"
+              src="/assets/profile.jpg"
               alt="Profile photo"
             />
           </div>

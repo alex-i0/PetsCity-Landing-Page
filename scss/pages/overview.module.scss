@@ -129,3 +129,97 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-laptop) {
+  .overview {
+    height: 150vh;
+    .servicesContainer {
+      width: 100%;
+    }
+
+    .aboutContainer {
+      .testimonials {
+        padding: 0 1rem;
+
+        .description {
+          width: 80%;
+          font-size: 1.2rem;
+        }
+
+        .profile {
+          padding: 0.5rem;
+          width: 65%;
+
+          .profileDescription {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            .name {
+              font-size: 1.4rem;
+            }
+
+            .jobTitle {
+              font-weight: 300;
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .overview {
+    height: auto;
+    padding: 0 1rem;
+    flex-direction: column;
+    .servicesContainer {
+      width: 100%;
+
+      .servicesRow {
+        flex-direction: column;
+
+        .serviceElement {
+          padding: 1.5rem 2rem;
+        }
+      }
+    }
+
+    .aboutContainer {
+      flex-direction: column;
+      .testimonials {
+        width: 100%;
+        padding: 0 1rem;
+
+        .description {
+          width: 100%;
+          font-size: 1.2rem;
+        }
+
+        .profile {
+          padding: 0.5rem;
+          width: 100%;
+
+          .profileDescription {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            .name {
+              font-size: 1.4rem;
+            }
+
+            .jobTitle {
+              font-weight: 300;
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+
+      .videoContainer {
+        width: 100%;
+      }
+    }
+  }
+}
