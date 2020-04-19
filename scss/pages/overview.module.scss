@@ -182,6 +182,13 @@
 
         .serviceElement {
           padding: 1.5rem 2rem;
+          width: 80%;
+          margin: auto;
+
+          .description {
+            text-align: justify;
+            font-size: 1rem;
+          }
         }
       }
     }

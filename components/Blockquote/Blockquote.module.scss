@@ -56,3 +56,9 @@
     transform: rotateY(360deg);
   }
 }
+
+@media (max-width: $breakpoint-phone) {
+  .blockquote {
+    width: 100%;
+  }
+}
