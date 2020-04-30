@@ -9,10 +9,10 @@ import dynamic from 'next/dynamic';
 import styles from '../scss/pages/index.module.scss';
 import { socialMediaData } from '../data/socialMedia';
 
-// const DynamicComponentWithNoSSR = dynamic(
-//   () => import('../components/Messenger/Messenger'),
-//   { ssr: false }
-// );
+const DynamicMessenger = dynamic(
+  () => import('../components/Messenger/Messenger'),
+  { ssr: false }
+);
 //Await for credentials
 
 const Home = () => (
@@ -103,6 +103,7 @@ const Home = () => (
     <Overview />
     <Contact />
     <Footer />
+    <DynamicMessenger pageId="2212800995661774" appId="570611146902725" />
   </div>
 );
 
