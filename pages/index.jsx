@@ -103,7 +103,7 @@ const Home = () => (
     <Overview />
     <Contact />
     <Footer />
-    <DynamicMessenger pageId="2212800995661774" appId="570611146902725" />
+    <DynamicMessenger />
   </div>
 );
 
