@@ -12,7 +12,7 @@ export const dataPolicy = [
   {
     title: 'Privacy policies of other websites',
     text:
-      'The Swiss psychologist and psychiatrist Carl Jung was one of the major forces responsible for bringing psychological (having to do with the mind and its processes) thought and its theories into the twentieth century.',
+      'The Swiss psychologist and psychiatrist  Carl Jung was one of the major forces responsible for bringing psychological (having to do with the mind and its processes) thought and its theories into the twentieth century.',
   },
   {
     title: 'Complaint Submission',
