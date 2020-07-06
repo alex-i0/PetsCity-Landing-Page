@@ -13,7 +13,6 @@ const DynamicMessenger = dynamic(
   () => import('../components/Messenger/Messenger'),
   { ssr: false }
 );
-//Await for credentials
 
 const Home = () => (
   <div>

@@ -4,7 +4,13 @@ import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import Vision from './vision';
 import Register from './register';
+import dynamic from 'next/dynamic';
 import styles from '../scss/pages/breeders.module.scss';
+
+const DynamicMessenger = dynamic(
+  () => import('../components/Messenger/Messenger'),
+  { ssr: false }
+);
 
 const breeders = () => {
   return (
@@ -39,6 +45,7 @@ const breeders = () => {
       <Vision />
       <Register />
       <Footer />
+      <DynamicMessenger />
     </div>
   );
 };
