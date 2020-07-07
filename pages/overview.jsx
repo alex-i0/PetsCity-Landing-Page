@@ -4,17 +4,17 @@ import styles from '../scss/pages/overview.module.scss';
 
 const services = [
   {
-    title: 'Easy & Safety',
+    title: 'Easy & Safe',
     icon: '/assets/001-money.png',
     description:
-      'Looking for high quality pet care at an affordable price? How about receiving veterinarian care.',
+      'Payment process will secure both sides of the deal. If something goes wrong, we will help you with refund.',
     alt: 'Secure money',
   },
   {
-    title: 'Read Reviews',
+    title: 'Professional Transport',
     icon: '/assets/002-people.png',
     description:
-      'Looking for high quality pet care at an affordable price? How about receiving veterinarian care.',
+      "Don't struggle with collecting pets. We will deliver your newest friend in comfortable and certified conditions.",
     alt: 'Online conversation',
   },
   {
@@ -50,14 +50,14 @@ const Overview = () => (
 
     <div className={styles.aboutContainer}>
       <div className={styles.testimonials}>
-        <h2 className={styles.titleH2}>Track Your Progress</h2>
+        <h2 className={styles.titleH2}>Complete Tool, Reliable Process</h2>
         <p className={styles.description}>
           We focus on dual benefits and comfort. Let your future pet friend find
           you with our tools.
         </p>
         <Blockquote
           text={
-            'Stands at the sea, wonders at wondering: I a universe of atoms, an atom in the universe. '
+            '"We are the one and only place with the range over all Europe, where people can find dogs and cats from certified breeders."'
           }
         />
         <div className={styles.profile}>
