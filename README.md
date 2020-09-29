@@ -1,4 +1,21 @@
+# PetsCity Landing Page
+
+You can check the webiste preview [here](https://pets-city-landing-page-jtlxsl81l.vercel.app/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+
+## Project Overview
+
+The website was build with use of the modern tools. List:
+- [React.js](https://reactjs.org/) - React is a perfect libarary for creating reusable components.
+- [Next.js](https://nextjs.org/) - Framework build on top of the react. Best choice for SSR webistes.
+- [SCSS](https://sass-lang.com/) - Used to speed up process of styling, since no components libarary were used.
+- [PWA](https://web.dev/progressive-web-apps/) - Boost the position of webiste in terms of SEO rank. Additionaly adds the behavior closed to native apps.
+
+Services:
+- [Vercel](https://vercel.com/) - Vercel is a hosting platform created by Next.js team.
+- [Mailchimp](https://mailchimp.com/) - Used for handling marketing channels.
+
 
 ## Getting Started
 
@@ -11,8 +28,6 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 ## Learn More
 
