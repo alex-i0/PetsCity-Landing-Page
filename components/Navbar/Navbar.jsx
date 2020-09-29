@@ -17,8 +17,8 @@ const links = [
 
 const Navbar = ({ text, link }) => (
   <nav className={styles.nav}>
-    <a className={styles.logo} href="/">
-      PetsCity
+    <a href="/">
+      <h3 className={styles.logo}>PetsCity</h3>
     </a>
     <div className={styles.menu}>
       {links.map(({ name, link }, index) => {
