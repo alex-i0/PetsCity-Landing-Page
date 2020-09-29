@@ -76,7 +76,7 @@ const Contact = () => {
       <div className={styles.imageContainer}>
         <img
           className={styles.image}
-          src="/assets/dog.png"
+          src="/assets/contact.png"
           alt="Office with parrot"
         />
       </div>

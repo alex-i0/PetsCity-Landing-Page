@@ -70,9 +70,6 @@ const Home = () => (
         </p>
 
         <div className={styles.buttonGroup}>
-          <a href="#services">
-            <button className={styles.buttonHighlight}>Explore</button>
-          </a>
           <a href="#contact">
             <button className={styles.buttonOutlineHighlight}>Join Now</button>
           </a>
@@ -94,7 +91,7 @@ const Home = () => (
       <div className={styles.imageContainer}>
         <img
           className={styles.image}
-          src="/assets/office.jpg"
+          src="/assets/animal-shelter.png"
           alt="Office with parrot"
         />
       </div>
