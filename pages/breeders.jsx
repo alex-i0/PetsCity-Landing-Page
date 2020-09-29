@@ -18,7 +18,7 @@ const breeders = () => {
       <Head>
         <title>PetsCity | Breeders</title>
       </Head>
-      <Navbar text={'For PLovers'} link={'/'} />
+      <Navbar text={'Get a pet'} link={'/'} />
       <div className={styles.breedersBackground}>
         <img
           src="/assets/background.png"
@@ -29,14 +29,13 @@ const breeders = () => {
           <div className={styles.header}>
             <h1 className={styles.title}>
               Join the Breeders of the Future
-              <br /> <span className={styles.highlight}>Start Today!</span>
             </h1>
             <p className={styles.description}>
               PetsCity is an online platform and a wonderful community of people
-              looking for a dream pet and reliable breeders from all of Europe.
+              looking for a dream pet and reliable breeders from all over the Europe.
             </p>
             <a href="/breeders#register">
-              <button className={styles.buttonHighlight}>Join Now</button>
+              <button className={styles.buttonHighlight}>Join Today</button>
             </a>
           </div>
         </div>

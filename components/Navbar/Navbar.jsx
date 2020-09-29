@@ -31,7 +31,7 @@ const Navbar = ({ text, link }) => (
       <span className={styles.vr} />
       <a href={link || '/breeders'}>
         <button className={styles.menuItemHighlight}>
-          {text || 'For Breeders'}
+          {text || 'Breeders'}
         </button>
       </a>
     </div>
