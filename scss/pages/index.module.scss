@@ -11,20 +11,19 @@
 
   .header {
     width: 40%;
+    color: $font-color;
 
     .title {
-      font-size: 3rem;
-      font-weight: 500;
     }
 
     .subtitle {
       font-size: 3rem;
-      font-weight: 500;
       margin-top: -5rem;
     }
 
     .description {
       font-size: 1.5rem;
+      color: $font-color-secondary;
     }
 
     .buttonGroup {
@@ -36,16 +35,6 @@
       .buttonOutlineHighlight {
         @extend %button;
         padding: 0.7rem;
-      }
-
-      .buttonHighlight {
-        @extend %button;
-        border: 1px solid $highlight-color;
-        padding: 0.7rem;
-        border-radius: $radius;
-        cursor: pointer;
-        background-color: $highlight-color;
-        text-decoration: none;
       }
     }
 

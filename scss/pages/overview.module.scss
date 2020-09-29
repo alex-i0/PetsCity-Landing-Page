@@ -8,12 +8,6 @@
   height: 100vh;
   width: 100%;
   padding: 0 10rem;
-  font-size: 1.4rem;
-
-  .titleH2 {
-    font-size: 1.6rem;
-    font-weight: 500;
-  }
 
   .servicesContainer {
     display: flex;
@@ -21,11 +15,6 @@
     justify-content: center;
     width: 75%;
     text-align: center;
-
-    .titleH2 {
-      font-size: 1.6rem;
-      font-weight: 500;
-    }
 
     .servicesRow {
       display: flex;
@@ -68,6 +57,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     text-align: center;
+    font-size: 1.4rem;
 
     .videoContainer {
       width: 50%;

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,6 +9,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: $background-color;
   font-size: 10px;
+
+  a {
+    text-decoration: none;
+  }
 
   a:visited {
     color: inherit;
@@ -20,4 +25,22 @@ body {
     cursor: pointer;
     outline: none;
   }
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: $font-color;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+  color: #000;
 }

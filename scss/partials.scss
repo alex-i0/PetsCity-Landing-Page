@@ -8,10 +8,10 @@
   font-weight: 600;
   transition: background-color 0.4s;
   border-radius: $radius;
+  border: 0;
 
   &:hover {
     cursor: pointer;
-    background-color: $main-color;
     color: $background-color;
     transition: background-color 0.4s;
   }
