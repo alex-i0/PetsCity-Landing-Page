@@ -61,7 +61,7 @@ const Contact = () => {
               <Checkbox />
               <label className={styles.checkboxText}>
                 By clicking Sign Up, you agree to our Terms. Learn how we
-                collect and use data in{' '}
+                collect and use data in 
                 <a className={styles.highlight} href="/data_policy">
                   Data Policy
                 </a>
@@ -76,8 +76,8 @@ const Contact = () => {
       <div className={styles.imageContainer}>
         <img
           className={styles.image}
-          src="/assets/contact.png"
-          alt="Office with parrot"
+          src="/assets/mail-sent.svg"
+          alt="Email sent to the PetsCity"
         />
       </div>
     </div>

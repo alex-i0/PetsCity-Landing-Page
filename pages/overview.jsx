@@ -28,10 +28,12 @@ const services = [
 
 const Overview = () => (
   <div className={styles.overview} id="services">
+
     <div className={styles.servicesContainer}>
       <h2 className={styles.titleH2}>Enjoy Quality of Service</h2>
       <div className={styles.servicesRow}>
         {services.map(({ title, icon, description, alt }, index) => (
+
           <div className={styles.serviceElement} key={index}>
             <div className={styles.titleContainer}>
               <div className={styles.icon}>
@@ -44,6 +46,7 @@ const Overview = () => (
 
             <p className={styles.description}>{description}</p>
           </div>
+          
         ))}
       </div>
     </div>
