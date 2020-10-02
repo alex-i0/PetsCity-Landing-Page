@@ -48,7 +48,7 @@ const Contact = () => {
         <div className={styles.formContainer}>
           <form className={styles.form} onSubmit={subscribe}>
             <label className={styles.label}>
-              xxxx
+              Email input
               <input
                 type="email"
                 className={styles.emailInput}
@@ -61,14 +61,15 @@ const Contact = () => {
               <Checkbox />
               <label className={styles.checkboxText}>
                 By clicking Sign Up, you agree to our Terms. Learn how we
-                collect and use data in 
+                collect and use data in {' '}
                 <a className={styles.highlight} href="/data_policy">
-                  Data Policy
+                 Data Policy
                 </a>
               </label>
             </div>
 
             <input className={styles.submit} type="submit" value="Sign Up" />
+            {/* Replace console.log */}
             {message ? console.log(message) : null}
           </form>
         </div>

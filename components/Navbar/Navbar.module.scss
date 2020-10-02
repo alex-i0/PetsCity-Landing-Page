@@ -17,6 +17,12 @@
     font-weight: 600;
     font-size: 2rem;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  img.logoImg{
+    height: 3rem;
   }
 
   .menu {

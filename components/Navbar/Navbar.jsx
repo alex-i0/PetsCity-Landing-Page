@@ -18,7 +18,10 @@ const links = [
 const Navbar = ({ text, link }) => (
   <nav className={styles.nav}>
     <a href="/">
-      <h3 className={styles.logo}>PetsCity</h3>
+      <h3 className={styles.logo}>
+        <img className={styles.logoImg} src="/assets/pets-city-logo.png"/>
+        PetsCity
+      </h3>
     </a>
     <div className={styles.menu}>
       {links.map(({ name, link }, index) => {
