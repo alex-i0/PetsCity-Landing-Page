@@ -1,14 +1,11 @@
-import React from 'react';
-import Head from 'next/head';
+import NextHead from '../components/NextHead/NextHead';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import { dataPolicy } from '../data/dataPolicy';
 
 const data_policy = () => (
     <div>
-        <Head>
-            <title>PetsCity | Data Policy</title>
-        </Head>
+        <NextHead title="PetsCity | Data Policy" />
         <Navbar />
         <div className="dataPolicy">
             <section className="section">

@@ -1,5 +1,4 @@
-import React from 'react';
-import Head from 'next/head';
+import NextHead from '../components/NextHead/NextHead';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import Vision from './vision';
@@ -10,9 +9,8 @@ const DynamicMessenger = dynamic(() => import('../components/Messenger/Messenger
 
 const breeders = () => (
     <div>
-        <Head>
-            <title>PetsCity | Breeders</title>
-        </Head>
+        <NextHead title="PetsCity | Breeders" />
+
         <Navbar text={'Get a pet'} link={'/'} />
         <div className="breedersBackground">
             <img src="/assets/background.png" alt="City with people and animals" className="image" />
@@ -20,8 +18,8 @@ const breeders = () => (
                 <div className="header">
                     <h1 className="title">Join the Breeders of the Future</h1>
                     <p className="description">
-                        PetsCity is an online platform and a wonderful community of people looking for a dream pet and reliable breeders
-                        from all over the Europe.
+                        PetsCity is an online platform and a wonderful community of people looking for dream pets and reliable breeders
+                        across the Europe.
                     </p>
                     <a href="/breeders#register">
                         <button className="buttonHighlight">Join Today</button>
