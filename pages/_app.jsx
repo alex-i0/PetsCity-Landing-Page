@@ -1,6 +1,5 @@
 import '../scss/main.scss';
-import '../scss/variables.scss';
 
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+const NextApp = ({ Component, pageProps }) => <Component {...pageProps} />;
+
+export default NextApp;

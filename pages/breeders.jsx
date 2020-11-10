@@ -5,47 +5,35 @@ import Footer from '../components/Footer/Footer';
 import Vision from './vision';
 import Register from './register';
 import dynamic from 'next/dynamic';
-import styles from '../scss/pages/breeders.module.scss';
 
-const DynamicMessenger = dynamic(
-  () => import('../components/Messenger/Messenger'),
-  { ssr: false }
-);
+const DynamicMessenger = dynamic(() => import('../components/Messenger/Messenger'), { ssr: false });
 
-const breeders = () => {
-  return (
+const breeders = () => (
     <div>
-      <Head>
-        <title>PetsCity | Breeders</title>
-      </Head>
-      <Navbar text={'Get a pet'} link={'/'} />
-      <div className={styles.breedersBackground}>
-        <img
-          src="/assets/background.png"
-          alt="City with people and animals"
-          className={styles.image}
-        />
-        <div className={styles.breeders}>
-          <div className={styles.header}>
-            <h1 className={styles.title}>
-              Join the Breeders of the Future
-            </h1>
-            <p className={styles.description}>
-              PetsCity is an online platform and a wonderful community of people
-              looking for a dream pet and reliable breeders from all over the Europe.
-            </p>
-            <a href="/breeders#register">
-              <button className={styles.buttonHighlight}>Join Today</button>
-            </a>
-          </div>
+        <Head>
+            <title>PetsCity | Breeders</title>
+        </Head>
+        <Navbar text={'Get a pet'} link={'/'} />
+        <div className="breedersBackground">
+            <img src="/assets/background.png" alt="City with people and animals" className="image" />
+            <div className="breeders">
+                <div className="header">
+                    <h1 className="title">Join the Breeders of the Future</h1>
+                    <p className="description">
+                        PetsCity is an online platform and a wonderful community of people looking for a dream pet and reliable breeders
+                        from all over the Europe.
+                    </p>
+                    <a href="/breeders#register">
+                        <button className="buttonHighlight">Join Today</button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <Vision />
-      <Register />
-      <Footer />
-      <DynamicMessenger />
+        <Vision />
+        <Register />
+        <Footer />
+        <DynamicMessenger />
     </div>
-  );
-};
+);
 
 export default breeders;
