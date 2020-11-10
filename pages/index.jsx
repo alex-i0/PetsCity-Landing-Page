@@ -26,7 +26,7 @@ const Home = () => (
 
                 <div className="buttonGroup">
                     <a href="#contact">
-                        <button className="buttonOutlineHighlight">Join Now</button>
+                        <button className="action-button">Join Now</button>
                     </a>
                 </div>
 
