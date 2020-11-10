@@ -1,65 +1,62 @@
-@import '../variables.scss';
-
 .register {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  padding: 10rem;
-
-  .contentContainer {
-    flex: 1;
-    padding: 5rem;
-    border-left: 2px solid $highlight-color;
-
-    .header {
-      .title {
-        font-weight: 400;
-        font-size: 2.5rem;
-        margin-bottom: 0rem;
-      }
-
-      .description {
-        margin-bottom: 4rem;
-        font-size: 1.2rem;
-        text-align: justify;
-        color: $font-color-secondary;
-
-      }
-    }
-  }
-
-  .imageContainer {
-    flex: 1;
-  }
-}
-
-@media (max-width: $breakpoint-laptop) {
-  .register {
-    padding: 8rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 10rem;
 
     .contentContainer {
-      width: 50%;
-      padding: 4rem;
+        flex: 1;
+        padding: 5rem;
+        border-left: 2px solid $highlight-color;
 
-      .header {
-        .title {
-          font-size: 2.2rem;
-        }
+        .header {
+            .title {
+                font-weight: 400;
+                font-size: 2.5rem;
+                margin-bottom: 0rem;
+            }
 
-        .description {
-          margin-bottom: 3.5rem;
+            .description {
+                margin-bottom: 4rem;
+                font-size: 1.2rem;
+                text-align: justify;
+                color: $font-color-secondary;
+            }
         }
-      }
     }
 
     .imageContainer {
-      min-width: 50%;
-      .image {
-        width: 100%;
-      }
+        flex: 1;
     }
-  }
+}
+
+@media (max-width: $breakpoint-laptop) {
+    .register {
+        padding: 8rem;
+
+        .contentContainer {
+            width: 50%;
+            padding: 4rem;
+
+            .header {
+                .title {
+                    font-size: 2.2rem;
+                }
+
+                .description {
+                    margin-bottom: 3.5rem;
+                }
+            }
+        }
+
+        .imageContainer {
+            min-width: 50%;
+            .image {
+                width: 100%;
+            }
+        }
+    }
 }

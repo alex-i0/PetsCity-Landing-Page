@@ -1,166 +1,160 @@
-@import '../variables.scss';
-@import '../partials.scss';
-
-.jumbotron {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  padding: 10rem;
-
-  .header {
-    width: 40%;
-    color: $font-color;
-
-    .title {
-    }
-
-    .subtitle {
-      font-size: 3rem;
-      margin-top: -5rem;
-    }
-
-    .description {
-      font-size: 1.5rem;
-      color: $font-color-secondary;
-    }
-
-    .buttonGroup {
-      display: flex;
-      justify-content: space-between;
-      width: 25rem;
-      font-size: 1.2rem;
-
-      .buttonOutlineHighlight {
-        @extend %button;
-        padding: 0.7rem;
-      }
-    }
-
-    .socialLinkGroup {
-      margin-top: 3rem;
-      display: flex;
-      justify-content: space-between;
-      width: 28%;
-      padding: 0.8rem;
-      font-size: 1.1rem;
-
-      .icon {
-        font-size: 3rem;
-        height: 3rem;
-        width: 3rem;
-      }
-    }
-  }
-
-  .imageContainer {
+div.jumbotron {
     display: flex;
     justify-content: center;
-    width: 60%;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 10rem;
 
-    .image {
-      width: 100%;
+    .header {
+        width: 40%;
+        color: $font-color;
+
+        .subtitle {
+            font-size: 3rem;
+            margin-top: -5rem;
+        }
+
+        .description {
+            font-size: 1.5rem;
+            color: $font-color-secondary;
+        }
+
+        .buttonGroup {
+            display: flex;
+            justify-content: space-between;
+            width: 25rem;
+            font-size: 1.2rem;
+
+            button.action-button {
+                @extend %button;
+                padding: 0.7rem;
+            }
+        }
+
+        .socialLinkGroup {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            width: 28%;
+            padding: 0.8rem;
+            font-size: 1.1rem;
+
+            .icon {
+                font-size: 3rem;
+                height: 3rem;
+                width: 3rem;
+            }
+        }
     }
-  }
+
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+
+        .image {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: $breakpoint-laptop) {
-  .jumbotron {
-    padding: 8rem;
+    .jumbotron {
+        padding: 8rem;
 
-    .header {
-      width: 50%;
+        .header {
+            width: 50%;
 
-      .title {
-        font-size: 2.6rem;
-        font-weight: 500;
-      }
+            .title {
+                font-size: 2.6rem;
+                font-weight: 500;
+            }
 
-      .subtitle {
-        font-size: 2.6rem;
-        font-weight: 500;
-        margin-top: -5rem;
-      }
+            .subtitle {
+                font-size: 2.6rem;
+                font-weight: 500;
+                margin-top: -5rem;
+            }
 
-      .description {
-        font-size: 1.3rem;
-      }
+            .description {
+                font-size: 1.3rem;
+            }
 
-      .socialLinkGroup {
-        margin-top: 3rem;
-        display: flex;
-        justify-content: space-between;
-        width: 32%;
-        padding: 0.6rem;
-        font-size: 1.6rem;
-      }
+            .socialLinkGroup {
+                margin-top: 3rem;
+                display: flex;
+                justify-content: space-between;
+                width: 32%;
+                padding: 0.6rem;
+                font-size: 1.6rem;
+            }
+        }
+
+        .imageContainer {
+            width: 50%;
+        }
     }
-
-    .imageContainer {
-      width: 50%;
-    }
-  }
 }
 
 @media (max-width: $breakpoint-phone) {
-  .jumbotron {
-    height: auto;
-    padding: 1rem;
-    padding-top: 8rem;
-    flex-direction: column;
-    max-width: 100%;
+    .jumbotron {
+        height: auto;
+        padding: 1rem;
+        padding-top: 8rem;
+        flex-direction: column;
+        max-width: 100%;
 
-    .header {
-      width: 100%;
-      margin-top: -2rem;
+        .header {
+            width: 100%;
+            margin-top: -2rem;
 
-      .title {
-        font-size: 2rem;
-        font-weight: 500;
-      }
+            .title {
+                font-size: 2rem;
+                font-weight: 500;
+            }
 
-      .subtitle {
-        font-size: 2rem;
-        font-weight: 500;
-        margin-top: -4rem;
-      }
+            .subtitle {
+                font-size: 2rem;
+                font-weight: 500;
+                margin-top: -4rem;
+            }
 
-      .description {
-        font-size: 1.2rem;
-        text-align: justify;
-      }
+            .description {
+                font-size: 1.2rem;
+                text-align: justify;
+            }
 
-      .buttonGroup {
-        margin-top: 1rem;
-        margin: auto;
-        width: 85%;
-        font-size: 1.1rem;
+            .buttonGroup {
+                margin-top: 1rem;
+                margin: auto;
+                width: 85%;
+                font-size: 1.1rem;
 
-        .buttonOutlineHighlight {
-          padding: 0.6rem;
-          width: 8rem;
+                .buttonOutlineHighlight {
+                    padding: 0.6rem;
+                    width: 8rem;
+                }
+
+                .buttonHighlight {
+                    padding: 0.6rem;
+                    width: 8rem;
+                }
+            }
+
+            .socialLinkGroup {
+                margin-left: auto;
+                margin-right: 3rem;
+            }
         }
 
-        .buttonHighlight {
-          padding: 0.6rem;
-          width: 8rem;
+        .imageContainer {
+            width: 100%;
+
+            .image {
+                width: 100%;
+                height: 50vh;
+            }
         }
-      }
-
-      .socialLinkGroup {
-        margin-left: auto;
-        margin-right: 3rem;
-      }
     }
-
-    .imageContainer {
-      width: 100%;
-
-      .image {
-        width: 100%;
-        height: 50vh;
-      }
-    }
-  }
 }
