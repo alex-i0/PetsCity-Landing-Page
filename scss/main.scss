@@ -1,5 +1,22 @@
-@import './variables.scss';
 @import './normalize.scss';
+@import './variables.scss';
 @import './core.scss';
+@import './partials.scss';
+@import './mixins.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import './pages/data_policy.module.scss';
+@import './pages/breeders.module.scss';
+@import './pages/contact.module.scss';
+@import './pages/index.module.scss';
+@import './pages/overview.module.scss';
+@import './pages/register.module.scss';
+@import './pages/vision.module.scss';
+
+@import '../components/Blockquote/Blockquote.module.scss';
+@import '../components/Checkbox/Checkbox.module.scss';
+@import '../components/Footer/Footer.module.scss';
+@import '../components/Form/Form.module.scss';
+@import '../components/Navbar/Navbar.module.scss';
+@import '../components/SocialMediaTile/SocialMediaTile.module.scss';
+@import '../components/StepBlock/StepBlock.module.scss';
+@import '../components/TextSwitch/TextSwitch.module.scss';
