@@ -1,83 +1,80 @@
-@import '../../scss/variables.scss';
-@import '../../scss/partials.scss';
-
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 10rem;
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-  height: 6rem;
-  font-size: 1.4rem;
-
-  h3.logo {
-    color: $main-color;
-    font-weight: 600;
-    font-size: 2rem;
-    text-decoration: none;
     display: flex;
+    justify-content: center;
     align-items: center;
-  }
+    padding: 2rem 10rem;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 6rem;
+    font-size: 1.4rem;
 
-  img.logoImg{
-    height: 3rem;
-  }
-
-  .menu {
-    display: flex;
-    width: 40%;
-    justify-content: space-around;
-    margin-left: auto;
-
-    .menuItem {
-      cursor: pointer;
-      padding: 0.5rem;
-      transition: background-color 0.4s;
-      transition: color 0.4s;
-      border-radius: $radius;
-      text-decoration: none;
-      color: $font-color;
-
-      &:hover {
-        background-color: $highlight-color;
-        transition: background-color 0.4s;
-        transition: color 0.4s;
+    h3.logo {
         color: $main-color;
-      }
+        font-weight: 600;
+        font-size: 2rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
     }
 
-    .menuItemHighlight {
-      @extend %button;
-      padding: 0.5rem;
-      width: 10rem;
+    img.logoImg {
+        height: 3rem;
     }
-  }
+
+    .menu {
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+        margin-left: auto;
+
+        .menuItem {
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: background-color 0.4s;
+            transition: color 0.4s;
+            border-radius: $radius;
+            text-decoration: none;
+            color: $font-color;
+
+            &:hover {
+                background-color: $highlight-color;
+                transition: background-color 0.4s;
+                transition: color 0.4s;
+                color: $main-color;
+            }
+        }
+
+        .menuItemHighlight {
+            @extend %button;
+            padding: 0.5rem;
+            width: 10rem;
+        }
+    }
 }
 
 @media (max-width: $breakpoint-laptop) {
-  .nav {
-    padding: 2rem 8rem;
+    .nav {
+        padding: 2rem 8rem;
 
-    .menu {
-      width: 45%;
+        .menu {
+            width: 45%;
 
-      .menuItemHighlight {
-        margin-left: 1rem;
-        font-size: 1.25rem;
-      }
+            .menuItemHighlight {
+                margin-left: 1rem;
+                font-size: 1.25rem;
+            }
+        }
     }
-  }
 }
 
 @media (max-width: $breakpoint-phone) {
-  .nav {
-    padding: 2rem 4rem;
-    height: 3rem;
+    .nav {
+        padding: 2rem 4rem;
+        height: 3rem;
 
-    .menu {
-      display: none;
+        .menu {
+            display: none;
+        }
     }
-  }
 }

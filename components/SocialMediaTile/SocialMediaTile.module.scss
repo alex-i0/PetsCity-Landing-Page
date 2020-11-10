@@ -1,23 +1,21 @@
-@import '../../scss/variables.scss';
-
 .socialMediaTile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  padding: 0.5rem;
-  border-radius: $radius;
-  transition: background-color 0.4s;
-  color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: $radius;
+    transition: background-color 0.4s;
+    color: inherit;
 
-  &:hover {
-    background-color: $highlight-color;
-    transition: background-color 0.4s, color 0.4s;
-    color: $main-color;
-  }
+    &:hover {
+        background-color: $highlight-color;
+        transition: background-color 0.4s, color 0.4s;
+        color: $main-color;
+    }
 
-  .fontAwesomeIcon {
-    height: 100%;
-  }
+    .fontAwesomeIcon {
+        height: 100%;
+    }
 }
