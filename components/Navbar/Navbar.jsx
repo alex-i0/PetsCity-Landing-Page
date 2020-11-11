@@ -1,3 +1,6 @@
+import Button from '../Button/Button';
+import Typography from '../Typography/Typography';
+
 const links = [
     {
         name: 'Services',
@@ -25,13 +28,13 @@ const Navbar = ({ text, link }) => (
             {links.map(({ name, link }, index) => {
                 return (
                     <a className="menuItem" href={link} key={index}>
-                        {name}
+                        <Typography text={name} type={'--link __small'} />
                     </a>
                 );
             })}
             <span className="vr" />
             <a href={link || '/breeders'}>
-                <button className="menuItemHighlight">{text || 'Breeders'}</button>
+                <Button text={text || 'Breeders'} size={'--small'} />
             </a>
         </div>
     </nav>
