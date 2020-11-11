@@ -1,0 +1,33 @@
+button.button-component {
+    height: 64px;
+    width: 200px;
+    background-color: #5f2eea;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #f7f7fc;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:hover {
+        background-color: #2a00a2;
+    }
+
+    &:focus {
+        opacity: 0.8;
+        border: 8px solid #ded3ff;
+    }
+
+    &.--medium {
+        height: 56px;
+    }
+
+    &.--small {
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+    }
+}
