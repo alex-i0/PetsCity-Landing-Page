@@ -3,45 +3,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: $background-color;
-  font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $background-color-grey;
+    font-size: 10px;
 
-  a {
-    text-decoration: none;
-  }
+    a {
+        text-decoration: none;
+    }
 
-  a:visited {
-    color: inherit;
-  }
+    a:visited {
+        color: inherit;
+    }
 
-  button {
-    border: 0;
-    padding: 0.7rem;
-    border-radius: $radius;
-    cursor: pointer;
-    outline: none;
-  }
+    button {
+        border: 0;
+        padding: 0.7rem;
+        border-radius: $border-radius;
+        cursor: pointer;
+        outline: none;
+    }
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  color: $font-color;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: $font-color;
 }
 
 h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 h3 {
-  font-size: 2.3rem;
-  color: #000;
+    font-size: 2.3rem;
+    color: #000;
 }

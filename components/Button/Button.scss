@@ -11,6 +11,7 @@ button.button-component {
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-transform: capitalize;
 
     &:hover {
         background-color: #2a00a2;

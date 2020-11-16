@@ -17,11 +17,11 @@
         padding: 1.5rem;
         font-size: 1.8rem;
         transition: 0.3s;
-        border-bottom: 0.1rem solid $main-color;
+        border-bottom: 0.1rem solid $primary-color;
         user-select: none;
 
         &::marker {
-            color: $main-color;
+            color: $primary-color;
         }
     }
 
@@ -43,7 +43,7 @@
 
         &[open] {
             .summary {
-                color: $main-color;
+                color: $primary-color;
             }
         }
     }

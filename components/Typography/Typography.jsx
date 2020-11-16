@@ -1,9 +1,9 @@
 import { string } from 'prop-types';
 
-const Typography = ({ text, type = null }) => <span className={`typography-component ${type}`}>{text}</span>;
+const Typography = ({ children, type = null }) => <span className={`typography-component ${type}`}>{children}</span>;
 
 Typography.propsTypes = {
-    text: string.isRequired,
+    children: string.isRequired,
     type: string
 };
 

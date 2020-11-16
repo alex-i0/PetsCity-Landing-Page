@@ -28,7 +28,7 @@ const Navbar = ({ text, link }) => (
             {links.map(({ name, link }, index) => {
                 return (
                     <a className="menuItem" href={link} key={index}>
-                        <Typography text={name} type={'--link __small'} />
+                        <Typography type={'--link __small'}>{name}</Typography>
                     </a>
                 );
             })}

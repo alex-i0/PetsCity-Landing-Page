@@ -10,7 +10,7 @@
     .contentContainer {
         flex: 1;
         padding: 5rem;
-        border-left: 2px solid $highlight-color;
+        border-left: 2px solid $primary-color;
 
         .header {
             .title {
@@ -23,7 +23,7 @@
                 margin-bottom: 4rem;
                 font-size: 1.2rem;
                 text-align: justify;
-                color: $font-color-secondary;
+                color: $font-color;
             }
         }
     }

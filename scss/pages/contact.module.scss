@@ -14,7 +14,7 @@
         font-size: 1.6rem;
         padding: 3rem;
         font-weight: 300;
-        border-left: 2px solid $highlight-color;
+        border-left: 2px solid $primary-color;
 
         .title {
             font-weight: 500;
@@ -25,7 +25,7 @@
             margin-bottom: 4rem;
             font-size: 1.5rem;
             text-align: justify;
-            color: $font-color-secondary;
+            color: $font-color;
             font-weight: 400;
         }
 
@@ -56,7 +56,7 @@
                         font-size: 0.8rem;
 
                         .highlight {
-                            color: $main-color;
+                            color: $primary-color;
                             cursor: pointer;
                             text-decoration: none;
                             font-weight: 400;
@@ -92,7 +92,7 @@
             font-size: 1.4rem;
             padding: 3rem;
             font-weight: 300;
-            border-left: 2px solid $highlight-color;
+            border-left: 2px solid $primary-color;
 
             .description {
                 margin-bottom: 2rem;
