@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { string, object } from 'prop-types';
 import Button from '../Button/Button';
 import Typography from '../Typography/Typography';
 
@@ -46,5 +47,10 @@ const Navbar = ({ text, buttonLink }) => (
         </div>
     </nav>
 );
+
+Navbar.propsTypes = {
+    text: string.isRequired,
+    buttonLink: string.isRequired
+};
 
 export default Navbar;
