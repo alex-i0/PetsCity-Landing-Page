@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Image from 'next/image';
 import Button from '../Button/Button';
 import Typography from '../Typography/Typography';
 
@@ -16,26 +18,29 @@ const links = [
     }
 ];
 
-const Navbar = ({ text, link }) => (
+const Navbar = ({ text, buttonLink }) => (
     <nav className="nav">
-        <a href="/">
+        <Link href="/">
             <h3 className="logo">
-                <img className="logoImg" src="/assets/pets-city-logo.png" />
-                PetsCity
+                <Image className="logoImg" src="/assets/pets-city-logo.png" height={62} width={62} loading="eager" />
+                <Typography type={'--display-bold __small logo'}>PetsCity</Typography>
             </h3>
-        </a>
+        </Link>
         <div className="menu">
-            {links.map(({ name, link }, index) => {
-                return (
-                    <a className="menuItem" href={link} key={index}>
-                        <Typography type={'--link __small'}>{name}</Typography>
+            {links.map(({ name, link }, index) => (
+                <Link href={link} key={index}>
+                    <a className="menu-item">
+                        <Typography type={'--link __small'} style={{ color: '#6e7191' }}>
+                            {name}
+                        </Typography>
                     </a>
-                );
-            })}
-            <span className="vr" />
-            <a href={link || '/breeders'}>
-                <Button text={text || 'Breeders'} size={'--small'} />
-            </a>
+                </Link>
+            ))}
+            <Link href={buttonLink || '/breeders'}>
+                <a>
+                    <Button text={text || 'Breeders'} size={'--small'} type={'--subtle'} />
+                </a>
+            </Link>
         </div>
     </nav>
 );

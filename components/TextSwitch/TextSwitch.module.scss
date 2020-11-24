@@ -15,7 +15,7 @@
 
         &__list {
             margin-top: 0;
-            padding-left: 20rem;
+            padding-left: 19.5rem;
             text-align: left;
             list-style: none;
 
@@ -185,26 +185,6 @@
     83.3%,
     95.96% {
         transform: translate3d(0, -25%, 0);
-    }
-}
-
-@media (max-width: $breakpoint-laptop) {
-    .content {
-        &__container {
-            &__list {
-                padding-left: 17.5rem;
-            }
-        }
-    }
-}
-
-@media (max-width: $breakpoint-phone) {
-    .content {
-        &__container {
-            &__list {
-                padding-left: 13.5rem;
-            }
-        }
     }
 }
 

@@ -1,0 +1,33 @@
+header.index-header {
+    width: 50%;
+    color: $font-color;
+
+    h1.title {
+        margin: 0;
+        padding: 0;
+    }
+
+    div.subtext {
+        margin-top: 1rem;
+    }
+
+    div.button-container {
+        max-width: 200px;
+        margin-top: 3rem;
+    }
+
+    div.social-media-links {
+        position: absolute;
+        bottom: 100px;
+    }
+}
+
+div.image-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+    .header-image {
+        width: 100%;
+    }
+}
