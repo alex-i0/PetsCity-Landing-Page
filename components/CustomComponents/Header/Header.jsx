@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import View from '../View/View';
-import Button from '../Button/Button';
-import Typography from '../Typography/Typography';
-import SocialMediaLink from '../SocialMediaLinks/SocialMediaLinks';
-import TextSwitch from '../TextSwitch/TextSwitch';
+import View from '../../View/View';
+import Button from '../../Button/Button';
+import Typography from '../../Typography/Typography';
+import SocialMediaLink from '../../SocialMediaLinks/SocialMediaLinks';
+import TextSwitch from '../../TextSwitch/TextSwitch';
 
 const Header = () => (
     <View>
@@ -23,7 +23,7 @@ const Header = () => (
             <div className="button-container">
                 <Link href="/#contact">
                     <a>
-                        <Button text="Join Now" />
+                        <Button>Join Now</Button>
                     </a>
                 </Link>
             </div>

@@ -21,10 +21,10 @@ const links = [
 const Navbar = ({ text, buttonLink }) => (
     <nav className="nav">
         <Link href="/">
-            <h3 className="logo">
+            <div className="logo">
                 <Image className="logoImg" src="/assets/pets-city-logo.png" height={62} width={62} loading="eager" />
                 <Typography type={'--display-bold __small logo'}>PetsCity</Typography>
-            </h3>
+            </div>
         </Link>
         <div className="menu">
             {links.map(({ name, link }, index) => (
@@ -38,7 +38,9 @@ const Navbar = ({ text, buttonLink }) => (
             ))}
             <Link href={buttonLink || '/breeders'}>
                 <a>
-                    <Button text={text || 'Breeders'} size={'--small'} type={'--subtle'} />
+                    <Button size={'--small'} type={'--subtle'}>
+                        {text || 'Breeders'}
+                    </Button>
                 </a>
             </Link>
         </div>

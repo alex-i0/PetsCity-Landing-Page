@@ -1,11 +1,14 @@
-import { string } from 'prop-types';
+import { node, string } from 'prop-types';
 
-const Button = ({ text, size = null, type = null }) => <button className={`button-component ${size} ${type}`}>{text}</button>;
+const Button = ({ children, size = null, type = null, className = null }) => (
+    <button className={`button-component ${size} ${type} ${className}`}>{children}</button>
+);
 
 Button.propsTypes = {
-    text: string.isRequired,
+    children: node.isRequired,
     size: string,
-    type: string
+    type: string,
+    className: string
 };
 
 export default Button;

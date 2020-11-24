@@ -1,0 +1,34 @@
+div.waitlist-container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    justify-content: center;
+
+    span.heading {
+        margin-bottom: 1.5rem;
+        span.highlight {
+            color: $primary-color;
+        }
+    }
+
+    button.waitlist-button {
+        margin-top: 3.5rem;
+    }
+}
+
+div.waitlist-image-container {
+    background-color: $background-grayscale;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .waitlist-image {
+        width: 100px;
+        height: 50vh;
+        display: none;
+    }
+}
