@@ -1,6 +1,5 @@
 import NextHead from '../components/NextHead/NextHead';
 import Navbar from '../components/Navbar/Navbar';
-import Contact from './contact';
 import Footer from '../components/Footer/Footer';
 import dynamic from 'next/dynamic';
 import Header from '../components/CustomComponents/Header/Header';
@@ -13,7 +12,6 @@ const Home = () => (
         <NextHead title="PetsCity" />
         <Navbar />
         <Header />
-        {/* <Contact /> */}
         <Waitlist />
         <Footer />
         <DynamicMessenger />
