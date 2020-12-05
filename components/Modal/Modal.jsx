@@ -1,11 +1,15 @@
 import { bool, func } from 'prop-types';
 import CloseIcon from '../../public/assets/close-icon.svg';
 import Button from '../Button/Button';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Typography from '../Typography/Typography';
+import Input from '../Input/Input';
 
 const Modal = ({ isModalOpen, toggleModal }) => {
+    const [pageYOffset, setPageYOffset] = useState(null);
+
     useEffect(() => {
+        setPageYOffset(window.pageYOffset);
         if (isModalOpen) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -14,12 +18,12 @@ const Modal = ({ isModalOpen, toggleModal }) => {
     }, [isModalOpen]);
 
     return (
-        <div className="modal-container" style={{ display: isModalOpen ? 'block' : 'none', top: window.pageYOffset }}>
+        <div className="modal-container" style={{ display: isModalOpen ? 'block' : 'none', top: pageYOffset }}>
             <div className="background" onClick={toggleModal}></div>
             <div className="card">
                 <CloseIcon className="close-icon" onClick={toggleModal} />
                 <Typography type={'--display-bold __small'}>Welcome in PetsCity</Typography>
-                <input placeholder="email" type="email" />
+                <Input placeholder="email" type="email" />
                 <Button onClick={toggleModal} size={'--small'}>
                     Sign up
                 </Button>

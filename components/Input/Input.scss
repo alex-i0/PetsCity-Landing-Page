@@ -1,0 +1,28 @@
+.input-component {
+    background-color: $input-background-grayscale;
+    height: 64px;
+    width: 325px;
+    padding: 0 24px;
+    border-radius: $border-radius;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+
+    &::placeholder {
+        color: $placeholder-grayscale;
+        text-transform: capitalize;
+    }
+
+    &:focus {
+        background: $off-white-grayscale;
+        border: 2px solid $title-active-grayscale;
+    }
+
+    &.--disabled {
+        background: $input-background-grayscale;
+        opacity: 0.5;
+    }
+}
