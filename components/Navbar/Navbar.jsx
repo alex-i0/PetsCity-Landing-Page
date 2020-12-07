@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { string, object } from 'prop-types';
+import { string } from 'prop-types';
 import Button from '../Button/Button';
 import Typography from '../Typography/Typography';
 
@@ -10,12 +10,12 @@ const links = [
         link: '/#services'
     },
     {
-        name: 'Vision',
-        link: '/#aboutus'
+        name: 'Transport',
+        link: '/#transport'
     },
     {
-        name: 'Contact',
-        link: '/#contact'
+        name: 'Waitlist',
+        link: '/#waitlist'
     }
 ];
 
