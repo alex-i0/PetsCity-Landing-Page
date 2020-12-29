@@ -4,16 +4,18 @@ import Footer from '../components/Footer/Footer';
 import dynamic from 'next/dynamic';
 import Header from '../components/CustomComponents/Header/Header';
 import Waitlist from '../components/CustomComponents/Waitlist/Waitlist';
-import Transit from '../components/CustomComponents/Transit/Transit';
+import Transport from '../components/CustomComponents/Transport/Transport';
+import Description from '../components/CustomComponents/Description/Description';
 
 const DynamicMessenger = dynamic(() => import('../components/Messenger/Messenger'), { ssr: false });
 
 const Home = () => (
     <div>
         <NextHead title="PetsCity" />
-        <Navbar />
+        <Navbar buttonText="Breeders" buttonLink="/breeders" />
         <Header />
-        <Transit />
+        <Description />
+        <Transport />
         <Waitlist />
         <Footer />
         <DynamicMessenger />

@@ -11,7 +11,7 @@ export const AnimalsArray = [
     },
     {
         animalType: 'Ragdol',
-        breeder: 'Dom Elzy - Ragdolls',
+        breeder: 'Dom Elzy Ragdolls',
         image: '/assets/ab/ab_ragdoll.jpg'
     },
     {

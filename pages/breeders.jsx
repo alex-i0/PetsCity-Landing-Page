@@ -1,7 +1,7 @@
 import NextHead from '../components/NextHead/NextHead';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
-import Transit from '../components/CustomComponents/Transit/Transit';
+import Transport from '../components/CustomComponents/Transport/Transport';
 import Waitlist from '../components/CustomComponents/Waitlist/Waitlist';
 import dynamic from 'next/dynamic';
 import Button from '../components/Button/Button';
@@ -13,7 +13,7 @@ const breeders = () => (
     <div>
         <NextHead title="PetsCity | Breeders" />
 
-        <Navbar text={'Get a pet'} link={'/'} />
+        <Navbar buttonText="Get a Pet" />
         <div className="breedersBackground">
             <img src="/assets/background.png" alt="City with people and animals" className="image" />
             <div className="breeders">
@@ -29,7 +29,7 @@ const breeders = () => (
                 </div>
             </div>
         </div>
-        <Transit />
+        <Transport />
         <Waitlist />
         <Footer />
         <DynamicMessenger />

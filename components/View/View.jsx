@@ -1,10 +1,13 @@
-import { node, bool } from 'prop-types';
+import { node, bool, string } from 'prop-types';
 
-const View = ({ children, padding = true }) => <section className={`view ${padding ? '--padding' : null}`}>{children}</section>;
+const View = ({ children, padding = true, className }) => (
+    <section className={`view ${padding ? '--padding' : null} ${className}`}>{children}</section>
+);
 
 View.propsTypes = {
     children: node.isRequired,
-    padding: bool
+    padding: bool,
+    className: string
 };
 
 export default View;

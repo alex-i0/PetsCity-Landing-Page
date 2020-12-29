@@ -22,8 +22,8 @@ const Waitlist = () => {
                         <span className="highlight">PetsCity</span> is coming to Europe 🇪🇺
                     </Typography>
                     <Typography type={'--text __small'}>
-                        Introducing PetsCity - your account for global fee-free spending, free international money transfers and instant
-                        payment notifications.
+                        The wait is almost over! We are thrilled to give you the tool you deserve to find your perfect fur friend. To stay
+                        in the loop and get quicker access, join our waitlist today.
                     </Typography>
                     <Button size={'--medium'} className={'waitlist-button'} onClick={() => toggleModal(isModalOpen)}>
                         Join Waitlist

@@ -19,7 +19,7 @@ const links = [
     }
 ];
 
-const Navbar = ({ text, buttonLink }) => (
+const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => (
     <nav className="nav">
         <Link href="/">
             <div className="logo">
@@ -37,10 +37,10 @@ const Navbar = ({ text, buttonLink }) => (
                     </a>
                 </Link>
             ))}
-            <Link href={buttonLink || '/breeders'}>
+            <Link href={buttonLink}>
                 <a>
                     <Button size={'--small'} type={'--subtle'}>
-                        {text || 'Breeders'}
+                        {buttonText}
                     </Button>
                 </a>
             </Link>
@@ -50,7 +50,7 @@ const Navbar = ({ text, buttonLink }) => (
 
 Navbar.propsTypes = {
     text: string.isRequired,
-    buttonLink: string.isRequired
+    buttonText: string
 };
 
 export default Navbar;
