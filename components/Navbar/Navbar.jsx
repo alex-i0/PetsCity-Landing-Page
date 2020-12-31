@@ -41,7 +41,7 @@ const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => (
             ))}
             <Link href={buttonLink}>
                 <a>
-                    <Button size={'--small'} type={'--subtle'}>
+                    <Button size={'small'} type={'subtle'}>
                         {buttonText}
                     </Button>
                 </a>

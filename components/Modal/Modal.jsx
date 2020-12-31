@@ -26,10 +26,10 @@ const Modal = ({ isModalOpen, toggleModal }) => {
                     Welcome in PetsCity
                 </Typography>
                 <Input placeholder="email" type="email" />
-                <Button onClick={toggleModal} size={'--small'}>
+                <Button onClick={toggleModal} size={'small'}>
                     Sign up
                 </Button>
-                <Button onClick={toggleModal} size={'--small'}>
+                <Button onClick={toggleModal} size={'small'}>
                     Skip for now
                 </Button>
             </div>

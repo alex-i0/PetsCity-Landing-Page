@@ -25,7 +25,7 @@ const Waitlist = () => {
                         The wait is almost over! We are thrilled to give you the tool you deserve to find your perfect fur friend. To stay
                         in the loop and get quicker access, join our waitlist today.
                     </Typography>
-                    <Button size={'--medium'} className={'waitlist-button'} onClick={() => toggleModal(isModalOpen)}>
+                    <Button size={'medium'} className={'waitlist-button'} onClick={() => toggleModal(isModalOpen)}>
                         Join Waitlist
                     </Button>
                 </div>
