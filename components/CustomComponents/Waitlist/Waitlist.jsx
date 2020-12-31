@@ -18,10 +18,10 @@ const Waitlist = () => {
             <Modal isModalOpen={isModalOpen} toggleModal={toggleModal} />
             <View padding={false}>
                 <div className="waitlist-container">
-                    <Typography type={'--display __small'} className="heading">
+                    <Typography type={'display'} size={'small'} className="heading">
                         <span className="highlight">PetsCity</span> is coming to Europe 🇪🇺
                     </Typography>
-                    <Typography type={'--text __small'}>
+                    <Typography type={'text'} size={'small'}>
                         The wait is almost over! We are thrilled to give you the tool you deserve to find your perfect fur friend. To stay
                         in the loop and get quicker access, join our waitlist today.
                     </Typography>

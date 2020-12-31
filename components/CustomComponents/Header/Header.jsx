@@ -12,10 +12,12 @@ const Header = () => (
             <h1 className="title">
                 <TextSwitch />
             </h1>
-            <Typography type={'--display-bold __medium '}>We'll handle the rest.</Typography>
+            <Typography type={'display-bold'} size={'medium'}>
+                We'll handle the rest.
+            </Typography>
             <br />
             <div className="subtext">
-                <Typography type={'--text __medium'}>
+                <Typography type={'text'} size={'medium'}>
                     Pets City can provide prompt and flexible solutions for a full range professional and business needs.
                 </Typography>
             </div>

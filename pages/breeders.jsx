@@ -18,7 +18,9 @@ const breeders = () => (
             <img src="/assets/background.png" alt="City with people and animals" className="image" />
             <div className="breeders">
                 <div className="header">
-                    <Typography type={'--display-bold __medium'}>The future of global breeding is in your hands. </Typography>
+                    <Typography type={'display-bold'} size={'medium'}>
+                        The future of global breeding is in your hands.{' '}
+                    </Typography>
                     <p className="description">
                         PetsCity is an online platform and a wonderful community of people looking for dream pets and reliable breeders
                         across the Europe.

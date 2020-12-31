@@ -24,14 +24,16 @@ const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => (
         <Link href="/">
             <div className="logo">
                 <Image className="logoImg" src="/assets/pets-city-logo.png" height={62} width={62} loading="eager" />
-                <Typography type={'--display-bold __small logo'}>PetsCity</Typography>
+                <Typography type={'display-bold'} size={'small'} className={'logo'}>
+                    PetsCity
+                </Typography>
             </div>
         </Link>
         <div className="menu">
             {links.map(({ name, link }, index) => (
                 <Link href={link} key={index}>
                     <a className="menu-item">
-                        <Typography type={'--link __small'} style={{ color: '#6e7191' }}>
+                        <Typography type={'link'} size={'small'} style={{ color: '#6e7191' }}>
                             {name}
                         </Typography>
                     </a>

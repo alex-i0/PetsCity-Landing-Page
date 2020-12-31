@@ -22,7 +22,9 @@ const Modal = ({ isModalOpen, toggleModal }) => {
             <div className="background" onClick={toggleModal}></div>
             <div className="card">
                 <CloseIcon className="close-icon" onClick={toggleModal} />
-                <Typography type={'--display-bold __small'}>Welcome in PetsCity</Typography>
+                <Typography type={'display-bold'} size={'small'}>
+                    Welcome in PetsCity
+                </Typography>
                 <Input placeholder="email" type="email" />
                 <Button onClick={toggleModal} size={'--small'}>
                     Sign up

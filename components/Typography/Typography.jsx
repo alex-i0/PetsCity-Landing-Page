@@ -1,7 +1,7 @@
 import { string, object } from 'prop-types';
 
-const Typography = ({ children, type = null, style = null, className = null }) => (
-    <span className={`typography-component ${type} ${className}`} style={style}>
+const Typography = ({ children, type = null, style = null, className = null, size = null }) => (
+    <span className={`typography-component --${type} __${size} ${className}`} style={style}>
         {children}
     </span>
 );
@@ -9,6 +9,7 @@ const Typography = ({ children, type = null, style = null, className = null }) =
 Typography.propsTypes = {
     children: string.isRequired,
     type: string,
+    size: string,
     style: object,
     className: string
 };
