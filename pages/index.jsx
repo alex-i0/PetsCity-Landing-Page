@@ -6,6 +6,7 @@ import Header from '../components/CustomComponents/Header/Header';
 import Waitlist from '../components/CustomComponents/Waitlist/Waitlist';
 import Transport from '../components/CustomComponents/Transport/Transport';
 import Description from '../components/CustomComponents/Description/Description';
+import About from '../components/CustomComponents/About/About';
 
 const DynamicMessenger = dynamic(() => import('../components/Messenger/Messenger'), { ssr: false });
 
@@ -14,6 +15,7 @@ const Home = () => (
         <NextHead title="PetsCity" />
         <Navbar buttonText="Breeders" buttonLink="/breeders" />
         <Header />
+        <About />
         <Description />
         <Transport />
         <Waitlist />
