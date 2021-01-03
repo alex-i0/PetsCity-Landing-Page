@@ -24,9 +24,6 @@ const Modal = ({ isModalOpen, toggleModal }) => {
     const subscribe = async () => {
         // e.preventDefault();
 
-        // 3. Send a request to our API with the user's email address.
-        console.log('Subscribe Function');
-        console.log(inputEl.current.value);
         const res = await fetch('/api/subscribe', {
             body: JSON.stringify({
                 email: inputEl.current.value
@@ -40,17 +37,11 @@ const Modal = ({ isModalOpen, toggleModal }) => {
         const { error } = await res.json();
 
         if (error) {
-            // 4. If there was an error, update the message in state.
             setMessage(error);
-            console.log(error);
-
-            return;
         }
 
-        // 5. Clear the input value and show a success message.
         inputEl.current.value = '';
         setMessage('Success! 🎉 You are now subscribed to the newsletter.');
-        console.log(message);
     };
 
     const signUpForMailSubscription = () => {
@@ -63,15 +54,15 @@ const Modal = ({ isModalOpen, toggleModal }) => {
             <div className="background" onClick={toggleModal}></div>
             <div className="card">
                 <CloseIcon className="close-icon" onClick={toggleModal} />
-                <Typography type={'display-bold'} size={'small'}>
+                <Typography type="display-bold" size="small">
                     Welcome in PetsCity
                 </Typography>
                 <Input placeholder="email" type="email" reference={inputEl} required />
                 <div className="button-container">
-                    <Button onClick={signUpForMailSubscription} size={'small'}>
+                    <Button onClick={signUpForMailSubscription} size="small">
                         Sign up
                     </Button>
-                    <Button onClick={toggleModal} size={'small'}>
+                    <Button onClick={toggleModal} size="small" type="subtle">
                         Skip for now
                     </Button>
                 </div>

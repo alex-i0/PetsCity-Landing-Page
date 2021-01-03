@@ -26,6 +26,7 @@ div.waitlist-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: $border-radius;
 
     .waitlist-image {
         width: 100px;

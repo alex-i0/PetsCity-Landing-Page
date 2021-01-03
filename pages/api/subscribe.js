@@ -1,20 +1,16 @@
 import fetch from 'isomorphic-unfetch';
 
 export default async (req, res) => {
-    // 1. Destructure the email address from the request body.
     const { email } = req.body;
 
     if (!email) {
-        // 2. Throw an error if an email wasn't provided.
         return res.status(400).json({ error: 'Email is required' });
     }
 
     try {
-        // 3. Fetch the environment variables.
         const LIST_ID = '9e95a7d76a' || process.env.MAILCHIMP_LIST_ID;
         const API_KEY = 'ceb624039c8c53634cbf98dcd3c500e0-us4' || process.env.MAILCHIMP_API_KEY;
-        console.log(LIST_ID, API_KEY);
-        // 4. API keys are in the form <key>-us3.
+
         const DATACENTER = API_KEY.split('-')[1];
 
         // 5. The status of 'subscribed' is equivalent to a double opt-in.

@@ -6,7 +6,7 @@ const Description = () => (
         <div className="container">
             <div className="header">
                 <Typography type={'display-bold'} size={'medium'}>
-                    Why PetsCity
+                    We are committed to Safety
                 </Typography>
                 <br />
                 <Typography type={'text'} size={'large'}>
@@ -16,7 +16,7 @@ const Description = () => (
 
             <div className="service">
                 <Typography type={'link'} size={'medium'}>
-                    Verified Breeders
+                    ✅ Verified Breeders
                 </Typography>
                 <hr />
                 <Typography type={'text'} size={'small'}>
@@ -25,16 +25,16 @@ const Description = () => (
             </div>
             <div className="service">
                 <Typography type={'link'} size={'medium'}>
-                    Secure Payment
+                    💳 Secure Payments
                 </Typography>
                 <hr />
                 <Typography type={'text'} size={'small'}>
-                    Get access to our full curriculum designed to make learning online interactive.
+                    Payment process will secure both sides of the deal. We will always help you with a refund.
                 </Typography>
             </div>
             <div className="service">
                 <Typography type={'link'} size={'medium'}>
-                    Pets Delivery
+                    🐶 Pets Delivery
                 </Typography>
                 <hr />
                 <Typography type={'text'} size={'small'}>
@@ -44,11 +44,11 @@ const Description = () => (
             <div className="service">
                 <Typography type={'link'} size={'medium'}>
                     {' '}
-                    Door to Door
+                    🏠 Door to Door
                 </Typography>
                 <hr />
                 <Typography type={'text'} size={'small'}>
-                    Get access to our full curriculum designed to make learning online interactive.
+                    Don't struggle with collecting pets. We will deliver your newest friend in comfortable and certified conditions.
                 </Typography>
             </div>
         </div>

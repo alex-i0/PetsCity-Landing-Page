@@ -7,7 +7,7 @@ const About = () => (
         <div className="about-container">
             <div className="text-content">
                 <Typography type={'display-bold'} size={'medium'}>
-                    PetsCity Is About Safety
+                    PetsCity Is About Connecting
                 </Typography>
                 <Typography type={'text'} size={'small'}>
                     With PetsCity, you can browse through over 200 hundred animals from all over Europe without moving from your sofa.
