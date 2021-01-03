@@ -75,6 +75,15 @@ const Modal = ({ isModalOpen, toggleModal }) => {
                         Skip for now
                     </Button>
                 </div>
+                {/* <div className="checkbox">
+                            <Checkbox />
+                            <label className="checkboxText">
+                                By clicking Sign Up, you agree to our Terms. Learn how we collect and use data in
+                                <a className="highlight" href="/data_policy">
+                                    Data Policy
+                                </a>
+                            </label>
+                        </div> */}
             </div>
         </div>
     );
