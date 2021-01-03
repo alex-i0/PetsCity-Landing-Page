@@ -31,9 +31,6 @@ const breeders = () => (
                 </div>
             </div>
         </div>
-        <Transport />
-        <Waitlist />
-        <Footer />
         <DynamicMessenger />
     </div>
 );
