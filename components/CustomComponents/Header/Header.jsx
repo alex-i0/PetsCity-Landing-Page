@@ -18,7 +18,8 @@ const Header = () => (
             <br />
             <div className="subtext">
                 <Typography type={'text'} size={'medium'}>
-                    Pets City can provide prompt and flexible solutions for a full range professional and business needs.
+                    Pets City provides you with an access to hundereds of breeders. Secure, easy and and flexible solutions for finding your
+                    future pet.
                 </Typography>
             </div>
 

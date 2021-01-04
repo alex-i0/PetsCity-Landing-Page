@@ -47,7 +47,7 @@ const Description = () => (
                 </Typography>
                 <hr />
                 <Typography type="text" size="small">
-                    Don't struggle with collecting pets. We will deliver it right to your doors. It couldn't be easier.
+                    Don't struggle with collecting a pet. We will deliver it right to your doors. It couldn't be easier.
                 </Typography>
             </div>
         </div>
