@@ -12,21 +12,21 @@ const Header = () => (
             <h1 className="title">
                 <TextSwitch />
             </h1>
-            <Typography type={'display-bold'} size={'medium'}>
+            <Typography type="display-bold" size="medium">
                 We'll handle the rest.
             </Typography>
             <br />
             <div className="subtext">
-                <Typography type={'text'} size={'medium'}>
+                <Typography type="text" size="medium">
                     Pets City provides you with an access to hundereds of breeders. Secure, easy and and flexible solutions for finding your
                     future pet.
                 </Typography>
             </div>
 
             <div className="button-container">
-                <Link href="/#contact">
+                <Link href="/">
                     <a>
-                        <Button>Join Now</Button>
+                        <Button>Join Waitlist</Button>
                     </a>
                 </Link>
             </div>
