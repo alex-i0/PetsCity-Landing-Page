@@ -8,8 +8,8 @@ export default async (req, res) => {
     }
 
     try {
-        const LIST_ID = '9e95a7d76a' || process.env.MAILCHIMP_LIST_ID;
-        const API_KEY = 'ceb624039c8c53634cbf98dcd3c500e0-us4' || process.env.MAILCHIMP_API_KEY;
+        const LIST_ID = process.env.MAILCHIMP_LIST_ID;
+        const API_KEY = process.env.MAILCHIMP_API_KEY;
 
         const DATACENTER = API_KEY.split('-')[1];
 
