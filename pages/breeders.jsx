@@ -1,10 +1,9 @@
 import NextHead from '../components/NextHead/NextHead';
 import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
-import Transport from '../components/CustomComponents/Transport/Transport';
-import Waitlist from '../components/CustomComponents/Waitlist/Waitlist';
+import View from '../components/View/View';
 import dynamic from 'next/dynamic';
 import Button from '../components/Button/Button';
+import Image from 'next/image';
 import Typography from '../components/Typography/Typography';
 
 const DynamicMessenger = dynamic(() => import('../components/Messenger/Messenger'), { ssr: false });
@@ -14,23 +13,21 @@ const breeders = () => (
         <NextHead title="PetsCity | Breeders" />
 
         <Navbar buttonText="Get a Pet" />
-        <div className="breedersBackground">
-            <img src="/assets/background.png" alt="City with people and animals" className="image" />
-            <div className="breeders">
-                <div className="header">
-                    <Typography type={'display-bold'} size={'medium'}>
-                        The future of global breeding is in your hands.{' '}
+        <View padding={false}>
+            <div className="breeders-container">
+                <div className="image-container"></div>
+                <div className="text-container">
+                    <Typography type="display-bold" size="medium">
+                        The future of global breeding is in your hands.
                     </Typography>
-                    <p className="description">
+                    <Typography>
                         PetsCity is an online platform and a wonderful community of people looking for dream pets and reliable breeders
                         across the Europe.
-                    </p>
-                    <a href="/breeders#register">
-                        <Button>Join Today</Button>
-                    </a>
+                    </Typography>
                 </div>
             </div>
-        </div>
+        </View>
+
         <DynamicMessenger />
     </div>
 );

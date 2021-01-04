@@ -10,7 +10,7 @@ const About = () => (
                     We Are Here To Connect
                 </Typography>
                 <Typography type={'text'} size={'small'}>
-                    With PetsCity, you can browse through over 200 hundred animals from all over Europe without moving from your sofa.
+                    At PetsCity, we recognize how hard is to find your dream pet.
                     <br />
                     <br />
                     Thanks to our partnership with the certified transporting firms,{' '}

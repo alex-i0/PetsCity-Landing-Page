@@ -8,13 +8,11 @@
 @import './pages/breeders.scss';
 @import './pages/index.scss';
 
-@import '../components/Checkbox/Checkbox.module.scss';
-@import '../components/Footer/Footer.module.scss';
-@import '../components/Form/Form.module.scss';
-@import '../components/Navbar/Navbar.module.scss';
-@import '../components/SocialMediaLinks/SocialMediaLinks.module.scss';
-@import '../components/StepBlock/StepBlock.module.scss';
-@import '../components/TextSwitch/TextSwitch.module.scss';
+@import '../components/Checkbox/Checkbox.scss';
+@import '../components/Footer/Footer.scss';
+@import '../components/Navbar/Navbar.scss';
+@import '../components/SocialMediaLinks/SocialMediaLinks.scss';
+@import '../components/TextSwitch/TextSwitch.scss';
 @import '../components/View/View.scss';
 @import '../components/Button/Button.scss';
 @import '../components/Typography/Typography.scss';
