@@ -25,7 +25,7 @@ const BreedersHeader = ({ onClick }) => (
                     Expose yourself to new horizons.
                 </Typography>
                 <Button className="breeders-button" onClick={onClick}>
-                    Join Global Market
+                    Let's Work Together
                 </Button>
             </div>
         </header>
