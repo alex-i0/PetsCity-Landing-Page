@@ -7,7 +7,7 @@ const Transport = () => {
         <View id="transport">
             <div className="transport-container">
                 <div className="image-container">
-                    <Image src="/assets/world-map.svg" width={700} height={700} />
+                    <Image src="/assets/world-map.svg" width={700} height={700} loading="eager" />
                 </div>
                 <div className="text-container">
                     <Typography type="display" size="small">
