@@ -23,14 +23,15 @@ const Counter = () => (
         <div className="counter-card">
             {appStatistics.map(({ title, number, monthlyChange }, index) => (
                 <div className="single-counter" key={index}>
-                    <span>
-                        <Typography type="text" size="large">
+                    <span className="number-container">
+                        <Typography type="link" size="large">
                             {number}
                         </Typography>
-                        <Typography>+{monthlyChange}</Typography>
+                        <Typography type="text" size="small" className="positive-number">
+                            {'  '}+{monthlyChange}
+                        </Typography>
                     </span>
-                    <span>This month</span>
-                    <Typography type="text" size="large">
+                    <Typography type="text" size="medium">
                         {title}
                     </Typography>
                 </div>

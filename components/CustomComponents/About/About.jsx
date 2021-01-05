@@ -10,18 +10,11 @@ const About = () => (
                     We Are Here To Connect
                 </Typography>
                 <Typography type={'text'} size={'small'}>
-                    At PetsCity, we recognize how hard is to find your dream pet.
+                    At PetsCity, we recognize how hard is to find your dream pet. Therefore we want to give you a complete and transparent
+                    solution.
                     <br />
                     <br />
-                    Thanks to our partnership with the certified transporting firms,{' '}
-                    <a href="" className="partner">
-                        QuickTrans{' '}
-                    </a>
-                    and{' '}
-                    <a href="" className="partner">
-                        PetsTravel
-                    </a>
-                    , we handle transport for you. Safe and stressful for your future pet!
+                    Our app gives you an unlimited access to hundreds of certified breeders.
                 </Typography>
             </div>
             <div className="image-container">
