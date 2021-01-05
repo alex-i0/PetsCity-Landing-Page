@@ -10,11 +10,11 @@ const Transport = () => {
                     <Image src="/assets/world-map.svg" width={700} height={700} />
                 </div>
                 <div className="text-container">
-                    <Typography type={'display'} size={'small'}>
+                    <Typography type="display" size="small">
                         Stay Local, Reach Global 🌎
                     </Typography>
                     <br />
-                    <Typography type={'text'} size={'small'}>
+                    <Typography type="text" size="small">
                         With PetsCity, you can browse through over 200 hundred animals from all over Europe without moving from your sofa.
                         <br />
                         <br />

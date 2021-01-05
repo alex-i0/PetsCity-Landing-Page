@@ -1,0 +1,11 @@
+.business-card {
+    height: 70vh;
+    width: 100%;
+    background-color: $background-grayscale;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
