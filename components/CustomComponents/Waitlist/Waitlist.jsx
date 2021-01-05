@@ -18,14 +18,14 @@ const Waitlist = () => {
             <Modal isModalOpen={isModalOpen} toggleModal={toggleModal} />
             <View padding={false} id="waitlist">
                 <div className="waitlist-container">
-                    <Typography type={'display'} size={'small'} className="heading">
+                    <Typography type="display" size="small" className="heading">
                         <span className="highlight">PetsCity</span> is coming to Europe 🇪🇺
                     </Typography>
-                    <Typography type={'text'} size={'small'}>
+                    <Typography type="text" size="small">
                         The wait is almost over! We are thrilled to give you the tool you deserve to find your perfect fur friend. To stay
                         in the loop and get quicker access, join our waitlist today.
                     </Typography>
-                    <Button size={'medium'} className={'waitlist-button'} onClick={() => toggleModal(isModalOpen)}>
+                    <Button size="medium" className="waitlist-button" onClick={() => toggleModal(isModalOpen)}>
                         Join Waitlist
                     </Button>
                 </div>
