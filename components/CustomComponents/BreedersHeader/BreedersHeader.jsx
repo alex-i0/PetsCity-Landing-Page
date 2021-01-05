@@ -15,14 +15,14 @@ const BreedersHeader = () => (
                 <br />
                 <Typography type="text" size="small">
                     PetsCity is an online platform and a wonderful community of people looking for dream pets and reliable breeders across
-                    the Europe.
+                    Europe.
                     <br />
                     <br />
-                    Despite our continous work on reavaling the app, we encourage you to join us right know. Currently we have 234 signed
-                    breeders, and our offer still expands.
+                    Our app is still in the development stage, but we encourage you to join us right now. Currently, we have{' '}
+                    <span className="highlighted-number">234</span> signed breeders, and the number still increases.
                     <br />
                     <br />
-                    Expose yourself for a new horizons.
+                    Expose yourself to new horizons.
                 </Typography>
             </div>
         </header>

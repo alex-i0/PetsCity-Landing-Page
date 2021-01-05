@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { string } from 'prop-types';
 import Button from '../Button/Button';
 import Typography from '../Typography/Typography';
@@ -20,9 +21,17 @@ const links = [
 ];
 
 const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
+    const router = useRouter();
+
     const scrollToNode = (id) => {
         const node = document.getElementById(id);
-        node.scrollIntoView({ behavior: 'smooth' });
+        if (node === null) {
+            router.push(`/#${id}`);
+        }
+
+        if (node) {
+            node.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (

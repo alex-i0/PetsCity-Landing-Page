@@ -13,5 +13,11 @@ header.breeders-header {
         width: 100%;
         height: 70vh;
         padding: 50px;
+
+        .highlighted-number {
+            color: $primary-color;
+            font-weight: bold;
+            text-decoration: underline;
+        }
     }
 }
