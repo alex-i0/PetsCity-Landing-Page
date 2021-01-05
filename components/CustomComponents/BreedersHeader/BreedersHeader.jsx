@@ -3,7 +3,7 @@ import Button from '../../Button/Button';
 import Typography from '../../Typography/Typography';
 import BusinessCard from '../BusinessCard/BusinessCard';
 
-const BreedersHeader = () => (
+const BreedersHeader = ({ onClick }) => (
     <View>
         <header className="breeders-header">
             <BusinessCard title="💼 Business Transparency" />
@@ -24,6 +24,9 @@ const BreedersHeader = () => (
                     <br />
                     Expose yourself to new horizons.
                 </Typography>
+                <Button className="breeders-button" onClick={onClick}>
+                    Join Global Market
+                </Button>
             </div>
         </header>
     </View>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import View from '../../View/View';
 import Button from '../../Button/Button';
 import Typography from '../../Typography/Typography';
@@ -9,7 +9,6 @@ const Waitlist = () => {
     const [isModalOpen, setModal] = useState(false);
 
     const toggleModal = (modalStatus) => {
-        console.log('toggleModal');
         setModal(!modalStatus);
     };
 
