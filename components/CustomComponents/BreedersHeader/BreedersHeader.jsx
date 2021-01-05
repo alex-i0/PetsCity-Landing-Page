@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import View from '../../View/View';
 import Button from '../../Button/Button';
 import Typography from '../../Typography/Typography';
@@ -11,11 +9,20 @@ const BreedersHeader = () => (
             <BusinessCard title="💼 Business Transparency" />
             <div className="text-container">
                 <Typography type="display-bold" size="medium">
-                    The future of global breeding is in your hands.
+                    The future of global breeding is in your hands 🙌
                 </Typography>
+                <br />
+                <br />
                 <Typography type="text" size="small">
                     PetsCity is an online platform and a wonderful community of people looking for dream pets and reliable breeders across
                     the Europe.
+                    <br />
+                    <br />
+                    Despite our continous work on reavaling the app, we encourage you to join us right know. Currently we have 234 signed
+                    breeders, and our offer still expands.
+                    <br />
+                    <br />
+                    Expose yourself for a new horizons.
                 </Typography>
             </div>
         </header>

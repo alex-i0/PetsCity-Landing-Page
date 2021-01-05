@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Button from '../../Button/Button';
 import Typography from '../../Typography/Typography';
 
 const BusinessCard = ({ title, image }) => (
