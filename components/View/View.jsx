@@ -1,7 +1,9 @@
 import { node, bool, string } from 'prop-types';
 
-const View = ({ children, padding = true, className }) => (
-    <section className={`view ${padding ? '--padding' : null} ${className}`}>{children}</section>
+const View = ({ children, padding = true, className, id }) => (
+    <section className={`view ${padding ? '--padding' : null} ${className}`} id={id}>
+        {children}
+    </section>
 );
 
 View.propsTypes = {

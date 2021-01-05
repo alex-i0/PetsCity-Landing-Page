@@ -2,7 +2,7 @@ import View from '../../View/View';
 import Typography from '../../Typography/Typography';
 
 const Description = () => (
-    <View className="description-view">
+    <View className="description-view" id="services">
         <div className="container">
             <div className="header">
                 <Typography type="display-bold" size="small">

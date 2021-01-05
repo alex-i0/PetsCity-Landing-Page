@@ -4,14 +4,14 @@ import Image from 'next/image';
 
 const Transport = () => {
     return (
-        <View>
+        <View id="transport">
             <div className="transport-container">
                 <div className="image-container">
                     <Image src="/assets/world-map.svg" width={700} height={700} />
                 </div>
                 <div className="text-container">
                     <Typography type={'display'} size={'small'}>
-                        Stay Local, Reach Global
+                        Stay Local, Reach Global 🌎
                     </Typography>
                     <br />
                     <Typography type={'text'} size={'small'}>

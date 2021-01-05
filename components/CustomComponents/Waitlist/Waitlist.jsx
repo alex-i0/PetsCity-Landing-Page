@@ -16,7 +16,7 @@ const Waitlist = () => {
     return (
         <>
             <Modal isModalOpen={isModalOpen} toggleModal={toggleModal} />
-            <View padding={false}>
+            <View padding={false} id="waitlist">
                 <div className="waitlist-container">
                     <Typography type={'display'} size={'small'} className="heading">
                         <span className="highlight">PetsCity</span> is coming to Europe 🇪🇺
