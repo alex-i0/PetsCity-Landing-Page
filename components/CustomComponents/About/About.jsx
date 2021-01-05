@@ -7,7 +7,7 @@ const About = () => (
         <div className="about-container">
             <div className="text-content">
                 <Typography type={'display-bold'} size={'medium'}>
-                    We Are Here To Connect
+                    We Are Here To Connect 🐾
                 </Typography>
                 <Typography type={'text'} size={'small'}>
                     At PetsCity, we recognize how hard is to find your dream pet. Therefore we want to give you a complete and transparent

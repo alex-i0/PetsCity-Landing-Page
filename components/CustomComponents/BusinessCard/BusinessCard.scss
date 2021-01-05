@@ -1,11 +1,22 @@
-.business-card {
+div.business-card-container {
     height: 70vh;
-    width: 100%;
-    background-color: $background-grayscale;
+    width: 90%;
+    border: 3px solid $primary-color;
     border-radius: $border-radius;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-color: #c4ecdc;
+    div.business-card {
+        position: relative;
+        bottom: 18px;
+        left: 14px;
+        height: 70vh;
+        width: 100%;
+        background-color: $background-grayscale;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 3px solid $primary-color;
+    }
 }
