@@ -19,36 +19,41 @@ const links = [
     }
 ];
 
-const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => (
-    <nav className="nav">
-        <Link href="/">
-            <div className="logo">
-                <Image className="logoImg" src="/assets/pets-city-logo.png" height={62} width={62} loading="eager" />
-                <Typography type="display-bold" size="small" className="logo">
-                    PetsCity
-                </Typography>
-            </div>
-        </Link>
-        <div className="menu">
-            {links.map(({ name, link }, index) => (
-                <Link href={link} key={index}>
-                    <a className="menu-item">
+const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
+    const scrollToNode = (id) => {
+        const node = document.getElementById(id);
+        node.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    return (
+        <nav className="nav">
+            <Link href="/">
+                <div className="logo">
+                    <Image className="logoImg" src="/assets/pets-city-logo.png" height={62} width={62} loading="eager" />
+                    <Typography type="display-bold" size="small" className="logo">
+                        PetsCity
+                    </Typography>
+                </div>
+            </Link>
+            <div className="menu">
+                {links.map(({ name, link }, index) => (
+                    <a className="menu-item" onClick={() => scrollToNode(name.toLowerCase())}>
                         <Typography type="link" size="small" style={{ color: '#6e7191' }}>
                             {name}
                         </Typography>
                     </a>
+                ))}
+                <Link href={buttonLink}>
+                    <a>
+                        <Button size="small" type="subtle">
+                            {buttonText}
+                        </Button>
+                    </a>
                 </Link>
-            ))}
-            <Link href={buttonLink}>
-                <a>
-                    <Button size="small" type="subtle">
-                        {buttonText}
-                    </Button>
-                </a>
-            </Link>
-        </div>
-    </nav>
-);
+            </div>
+        </nav>
+    );
+};
 
 Navbar.propsTypes = {
     text: string.isRequired,
