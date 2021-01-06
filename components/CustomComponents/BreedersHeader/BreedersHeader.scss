@@ -14,13 +14,13 @@ header.breeders-header {
         height: 70vh;
         padding: 20px 70px 0 90px;
 
-        .highlighted-number {
+        span.highlighted-number {
             color: $primary-color;
             font-weight: bold;
             text-decoration: underline;
         }
 
-        .breeders-button {
+        button.breeders-button {
             margin-top: auto;
         }
     }

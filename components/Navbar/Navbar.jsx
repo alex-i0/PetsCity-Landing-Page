@@ -25,13 +25,9 @@ const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
 
     const scrollToNode = (id) => {
         const node = document.getElementById(id);
-        if (node === null) {
-            router.push(`/#${id}`);
-        }
+        if (node === null) router.push(`/#${id}`);
 
-        if (node) {
-            node.scrollIntoView({ behavior: 'smooth' });
-        }
+        if (node) node.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
@@ -46,7 +42,7 @@ const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
             </Link>
             <div className="menu">
                 {links.map(({ name, link }, index) => (
-                    <a className="menu-item" onClick={() => scrollToNode(name.toLowerCase())}>
+                    <a className="menu-item" onClick={() => scrollToNode(name.toLowerCase())} key={index}>
                         <Typography type="link" size="small" style={{ color: '#6e7191' }}>
                             {name}
                         </Typography>

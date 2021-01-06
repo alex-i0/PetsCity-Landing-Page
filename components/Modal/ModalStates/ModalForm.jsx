@@ -11,15 +11,6 @@ const ModalForm = ({ signUp, inputEl, toggleModal }) => (
             <Button onClick={toggleModal} size="small" type="subtle">
                 Skip for now
             </Button>
-            {/* <div className="checkbox">
-                            <Checkbox />
-                            <label className="checkboxText">
-                                By clicking Sign Up, you agree to our Terms. Learn how we collect and use data in
-                                <a className="highlight" href="/data_policy">
-                                    Data Policy
-                                </a>
-                            </label>
-                        </div> */}
         </div>
     </>
 );
