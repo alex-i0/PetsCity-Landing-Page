@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { string } from 'prop-types';
 import Button from '../Button/Button';
 import Typography from '../Typography/Typography';
+import { scrollToNode } from '../../utils/navigation';
 
 const links = [
     {
@@ -23,13 +24,6 @@ const links = [
 const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
     const router = useRouter();
 
-    const scrollToNode = (id) => {
-        const node = document.getElementById(id);
-        if (node === null) router.push(`/#${id}`);
-
-        if (node) node.scrollIntoView({ behavior: 'smooth' });
-    };
-
     return (
         <nav className="nav">
             <Link href="/">
@@ -42,7 +36,7 @@ const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
             </Link>
             <div className="menu">
                 {links.map(({ name, link }, index) => (
-                    <a className="menu-item" onClick={() => scrollToNode(name.toLowerCase())} key={index}>
+                    <a className="menu-item" onClick={() => scrollToNode(name.toLowerCase(), router)} key={index}>
                         <Typography type="link" size="small" style={{ color: '#6e7191' }}>
                             {name}
                         </Typography>
