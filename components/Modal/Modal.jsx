@@ -5,6 +5,7 @@ import Typography from '../Typography/Typography';
 import { subscribe } from './ModalAPI';
 import ModalForm from './ModalStates/ModalForm';
 import ModalStatus from './ModalStates/ModalStatus';
+import { motion } from 'framer-motion';
 
 const Modal = ({ isModalOpen, toggleModal }) => {
     const [pageYOffset, setPageYOffset] = useState(null);
@@ -26,7 +27,11 @@ const Modal = ({ isModalOpen, toggleModal }) => {
     };
 
     return (
-        <div className="modal-container" style={{ display: isModalOpen ? 'block' : 'none', top: pageYOffset }}>
+        <motion.div
+            animate={{ opacity: isModalOpen ? 1 : 0 }}
+            className="modal-container"
+            style={{ display: isModalOpen ? 'block' : 'none', top: pageYOffset }}
+        >
             <div className="background" onClick={toggleModal}></div>
             <div className="card">
                 <CloseIcon className="close-icon" onClick={toggleModal} />
@@ -39,7 +44,7 @@ const Modal = ({ isModalOpen, toggleModal }) => {
                     <ModalStatus subscriptionStatus={status} subscriptionMessage={message} />
                 )}
             </div>
-        </div>
+        </motion.div>
     );
 };
 
