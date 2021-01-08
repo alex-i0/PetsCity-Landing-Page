@@ -8,16 +8,13 @@ import { scrollToNode } from '../../utils/navigation';
 
 const links = [
     {
-        name: 'Services',
-        link: '/#services'
+        name: 'Services'
     },
     {
-        name: 'Transport',
-        link: '/#transport'
+        name: 'Transport'
     },
     {
-        name: 'Waitlist',
-        link: '/#waitlist'
+        name: 'Waitlist'
     }
 ];
 
@@ -35,7 +32,7 @@ const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
                 </div>
             </Link>
             <div className="menu">
-                {links.map(({ name, link }, index) => (
+                {links.map(({ name }, index) => (
                     <a className="menu-item" onClick={() => scrollToNode(name.toLowerCase(), router)} key={index}>
                         <Typography type="link" size="small" style={{ color: '#6e7191' }}>
                             {name}
