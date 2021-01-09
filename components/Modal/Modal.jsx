@@ -29,6 +29,7 @@ const Modal = ({ isModalOpen, toggleModal }) => {
     return (
         <motion.div
             animate={{ opacity: isModalOpen ? 1 : 0 }}
+            transition={{ ease: 'easeOut', duration: 0.5 }}
             className="modal-container"
             style={{ display: isModalOpen ? 'block' : 'none', top: pageYOffset }}
         >
