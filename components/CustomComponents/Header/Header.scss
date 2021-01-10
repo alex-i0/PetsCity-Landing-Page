@@ -31,3 +31,9 @@ div.image-container {
         width: 100%;
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    header.index-header {
+        width: 100%;
+    }
+}

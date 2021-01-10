@@ -39,3 +39,35 @@
         }
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .description-view {
+        div.container {
+            padding: 0;
+            grid-template-areas:
+                'header'
+                'main'
+                'main'
+                'main'
+                'main';
+
+            grid-template-columns: 100% [col-left];
+            grid-template-rows: [row1-start] 20% [row1-end] 1 [third-line] 1 [fourth-line] 1 [fifth-line] 1 [last-line];
+
+            div.header {
+                margin: auto;
+                margin-top: 40px;
+                width: 80%;
+            }
+
+            div.service {
+                margin-top: 40px;
+                width: 80%;
+                hr {
+                    height: 2px;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

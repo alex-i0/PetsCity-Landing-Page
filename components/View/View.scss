@@ -9,3 +9,14 @@ section.view {
         padding: 5rem;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    section.view {
+        flex-direction: column;
+        height: auto;
+
+        &.--padding {
+            padding: 5%;
+        }
+    }
+}

@@ -39,3 +39,16 @@
         }
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .nav {
+        padding: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+
+        div.menu {
+            display: none;
+        }
+    }
+}

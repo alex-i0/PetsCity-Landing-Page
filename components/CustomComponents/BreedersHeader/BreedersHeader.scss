@@ -25,3 +25,21 @@ header.breeders-header {
         }
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    header.breeders-header {
+        flex-direction: column-reverse;
+
+        div.text-container {
+            margin-top: 800px;
+            flex-direction: column;
+            height: auto;
+            padding: 0;
+            text-align: center;
+
+            button.breeders-button {
+                margin-top: 50px;
+            }
+        }
+    }
+}

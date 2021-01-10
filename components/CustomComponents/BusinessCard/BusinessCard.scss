@@ -20,3 +20,12 @@ div.business-card-container {
         border: 3px solid $primary-color;
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    div.business-card-container {
+        height: auto;
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}

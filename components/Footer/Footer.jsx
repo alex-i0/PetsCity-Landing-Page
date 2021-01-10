@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Typography from '../Typography/Typography';
 
 const Footer = () => (
-    <div className="footer">
+    <section className="footer">
         <div className="contact-badges">
             <a href="mailto:hello@pets.city" className="contact-badge --email">
                 <Typography type={'link'} size={'x-small'} className={'text-email'}>
@@ -30,7 +30,7 @@ const Footer = () => (
                 </a>
             </Link>
         </span>
-    </div>
+    </section>
 );
 
 export default Footer;

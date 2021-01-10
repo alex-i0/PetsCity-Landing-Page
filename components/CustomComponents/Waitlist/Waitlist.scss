@@ -34,3 +34,21 @@ div.waitlist-image-container {
         display: none;
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    div.waitlist-container {
+        width: 100%;
+        height: auto;
+        padding: 3rem;
+
+        button.waitlist-button {
+            margin: auto;
+            margin-top: 3.5rem;
+        }
+    }
+
+    div.waitlist-image-container {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -16,3 +16,14 @@
         border-radius: $border-radius;
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .about-container {
+        flex-direction: column;
+        .text-content {
+            width: 100%;
+            height: auto;
+            text-align: justify;
+        }
+    }
+}
