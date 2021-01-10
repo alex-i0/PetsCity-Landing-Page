@@ -97,3 +97,24 @@ span.typography-component {
         }
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    span.typography-component {
+        &.--display-bold {
+            &.__large {
+                font-size: 48px;
+                line-height: 66px;
+            }
+
+            &.__medium {
+                font-size: 36px;
+                line-height: 50px;
+            }
+
+            &.__small {
+                font-size: 32px;
+                line-height: 28px;
+            }
+        }
+    }
+}

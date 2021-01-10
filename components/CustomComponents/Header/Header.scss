@@ -34,6 +34,13 @@ div.image-container {
 
 @media only screen and (max-width: $breakpoint-phone) {
     header.index-header {
+        margin-top: 80px;
         width: 100%;
+
+        div.button-container {
+            max-width: 200px;
+            margin: auto;
+            margin-top: 3rem;
+        }
     }
 }

@@ -205,3 +205,14 @@
 // x = 12.66 -> Time spent on a line
 
 // You can define a value and calculate the other if you want change speed or the number of lines
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .content {
+        &__container {
+            &__list {
+                padding-left: 16rem;
+                text-align: left;
+            }
+        }
+    }
+}

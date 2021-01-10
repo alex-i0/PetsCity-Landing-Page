@@ -13,9 +13,9 @@ const Header = () => {
     return (
         <View>
             <header className="index-header">
-                <h1 className="title">
+                <Typography type="display-bold" size="medium" className="title">
                     <TextSwitch />
-                </h1>
+                </Typography>
                 <Typography type="display-bold" size="medium">
                     We'll handle the rest.
                 </Typography>
