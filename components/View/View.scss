@@ -10,7 +10,7 @@ section.view {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: $breakpoint-phone) {
     section.view {
         flex-direction: column;
         height: auto;
