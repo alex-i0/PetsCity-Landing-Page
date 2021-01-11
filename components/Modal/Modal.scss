@@ -80,3 +80,16 @@ div.modal-container {
         }
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    div.modal-container {
+        div.card {
+            width: 95%;
+            padding: 80px 30px;
+        }
+
+        .button-container {
+            width: 100%;
+        }
+    }
+}
