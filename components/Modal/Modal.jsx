@@ -22,8 +22,9 @@ const Modal = ({ isModalOpen, toggleModal }) => {
         }
     }, [isModalOpen]);
 
-    const signUpForMailSubscription = () => {
+    const signUpForMailSubscription = (event) => {
         subscribe(setMessage, setStatus, inputEl);
+        event.preventDefault();
     };
 
     return (
