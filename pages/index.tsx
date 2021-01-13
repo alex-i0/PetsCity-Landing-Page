@@ -11,7 +11,7 @@ import Counter from '../components/CustomComponents/Counter/Counter';
 
 const DynamicMessenger = dynamic(() => import('../components/Messenger/Messenger'), { ssr: false });
 
-const Home = () => (
+const Home: React.FC = () => (
     <div>
         <NextHead title="PetsCity" />
         <Navbar buttonText="Breeders" buttonLink="/breeders" />

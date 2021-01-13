@@ -3,7 +3,7 @@ import FacebookIcon from '../../public/assets/facebook-icon.svg';
 import LinkedinIcon from '../../public/assets/linkedin-icon.svg';
 import Link from 'next/link';
 
-const SocialMediaLink = () => (
+const SocialMediaLink: React.FC = () => (
     <div className="link-group">
         <Link href="https://www.instagram.com/transservicetransport/">
             <a target="_blank" rel="noreferrer">

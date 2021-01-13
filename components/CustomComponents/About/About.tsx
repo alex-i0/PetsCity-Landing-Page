@@ -2,7 +2,7 @@ import View from '../../View/View';
 import Typography from '../../Typography/Typography';
 import Image from 'next/image';
 
-const About = () => (
+const About: React.FC = () => (
     <View>
         <div className="about-container">
             <div className="text-content">

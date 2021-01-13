@@ -1,12 +1,19 @@
 import { node, bool, string } from 'prop-types';
 
-const View = ({ children, padding = true, className = '', id }) => (
+type ViewPropTypes = {
+    children: React.ReactChild;
+    padding?: boolean;
+    className?: string;
+    id?: string;
+};
+
+const View: React.FC<ViewPropTypes> = ({ children, padding = true, className = '', id }: ViewPropTypes) => (
     <section className={`view ${padding ? '--padding' : null} ${className}`} id={id}>
         {children}
     </section>
 );
 
-View.propsTypes = {
+View.propTypes = {
     children: node.isRequired,
     padding: bool,
     className: string

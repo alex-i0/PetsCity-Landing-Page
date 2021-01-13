@@ -1,6 +1,11 @@
 import Typography from '../../Typography/Typography';
 
-const ModalStatus = ({ subscriptionMessage, subscriptionStatus }) => {
+type ModalStatusPropTypes = {
+    subscriptionMessage: string;
+    subscriptionStatus: string;
+};
+
+const ModalStatus: React.FC<ModalStatusPropTypes> = ({ subscriptionMessage, subscriptionStatus }: ModalStatusPropTypes) => {
     const status = subscriptionStatus ? 'success' : 'error';
 
     return (

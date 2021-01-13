@@ -1,7 +1,7 @@
 import View from '../../View/View';
 import Typography from '../../Typography/Typography';
 
-const Description = () => (
+const Description: React.FC = () => (
     <View className="description-view" id="services">
         <div className="container">
             <div className="header">

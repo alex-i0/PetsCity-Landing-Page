@@ -2,7 +2,7 @@ import View from '../../View/View';
 import Typography from '../../Typography/Typography';
 import Image from 'next/image';
 
-const Transport = () => {
+const Transport: React.FC = () => {
     return (
         <View id="transport">
             <div className="transport-container">

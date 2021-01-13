@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import { dataPolicy } from '../data/dataPolicy';
 
-const data_policy = () => (
+const data_policy: React.FC = () => (
     <div>
         <NextHead title="PetsCity | Data Policy" />
         <Navbar />

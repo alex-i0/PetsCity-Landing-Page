@@ -18,7 +18,12 @@ const links = [
     }
 ];
 
-const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
+type NavbarPropTypes = {
+    buttonText?: string;
+    buttonLink?: string;
+};
+
+const Navbar: React.FC<NavbarPropTypes> = ({ buttonText = 'Placeholder', buttonLink = '/' }: NavbarPropTypes) => {
     const router = useRouter();
 
     return (
@@ -58,8 +63,8 @@ const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
     );
 };
 
-Navbar.propsTypes = {
-    text: string.isRequired,
+Navbar.propTypes = {
+    buttonLink: string,
     buttonText: string
 };
 

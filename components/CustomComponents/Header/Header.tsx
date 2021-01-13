@@ -7,7 +7,7 @@ import TextSwitch from '../../TextSwitch/TextSwitch';
 import { useRouter } from 'next/router';
 import { scrollToNode } from '../../../utils/navigation';
 
-const Header = () => {
+const Header: React.FC = () => {
     const router = useRouter();
 
     return (

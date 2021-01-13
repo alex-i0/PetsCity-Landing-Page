@@ -1,6 +1,11 @@
 import Head from 'next/head';
 import { string } from 'prop-types';
-const NextHead = ({ title }) => (
+
+type NextHeadProps = {
+    title: string;
+};
+
+const NextHead: React.FC<NextHeadProps> = ({ title }: NextHeadProps) => (
     <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -21,7 +26,7 @@ const NextHead = ({ title }) => (
     </Head>
 );
 
-NextHead.propsTypes = {
+NextHead.propTypes = {
     title: string.isRequired
 };
 

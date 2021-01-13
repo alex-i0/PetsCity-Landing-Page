@@ -7,7 +7,12 @@ import ModalForm from './ModalStates/ModalForm';
 import ModalStatus from './ModalStates/ModalStatus';
 import { motion } from 'framer-motion';
 
-const Modal = ({ isModalOpen, toggleModal }) => {
+type ModalPropTypes = {
+    isModalOpen: boolean;
+    toggleModal: void;
+};
+
+const Modal: React.FC<ModalPropTypes> = ({ isModalOpen, toggleModal }: ModalPropTypes) => {
     const [pageYOffset, setPageYOffset] = useState(null);
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState(null);
@@ -50,7 +55,7 @@ const Modal = ({ isModalOpen, toggleModal }) => {
     );
 };
 
-Modal.propsTypes = {
+Modal.propTypes = {
     isModalOpen: bool.isRequired,
     toggleModal: func.isRequired
 };

@@ -3,7 +3,11 @@ import Button from '../../Button/Button';
 import Typography from '../../Typography/Typography';
 import BusinessCard from '../BusinessCard/BusinessCard';
 
-const BreedersHeader = ({ onClick }) => (
+type BreedersHeaderPropTypes = {
+    onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+};
+
+const BreedersHeader: React.FC<BreedersHeaderPropTypes> = ({ onClick }: BreedersHeaderPropTypes) => (
     <View>
         <header className="breeders-header">
             <BusinessCard title="💼 Business Transparency" />

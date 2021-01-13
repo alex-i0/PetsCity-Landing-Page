@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Typography from '../Typography/Typography';
 
-const Footer = () => (
+const Footer: React.FC = () => (
     <section className="footer">
         <div className="contact-badges">
             <a href="mailto:hello@pets.city" className="contact-badge --email">

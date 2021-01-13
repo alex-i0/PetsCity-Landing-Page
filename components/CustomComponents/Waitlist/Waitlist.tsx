@@ -5,7 +5,7 @@ import Typography from '../../Typography/Typography';
 import Image from 'next/image';
 import Modal from '../../Modal/Modal';
 
-const Waitlist = () => {
+const Waitlist: React.FC = () => {
     const [isModalOpen, setModal] = useState(false);
 
     const toggleModal = (modalStatus) => {

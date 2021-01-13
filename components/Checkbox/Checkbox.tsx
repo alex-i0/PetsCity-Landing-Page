@@ -1,4 +1,8 @@
-const Checkbox = ({ isRequired = true }) => (
+type CheckboxProps = {
+    isRequired?: boolean;
+};
+
+const Checkbox: React.FC<CheckboxProps> = ({ isRequired = true }: CheckboxProps) => (
     <label className="checkbox path">
         Agree Data Policy
         <input className="input" type="checkbox" required={isRequired} />

@@ -1,6 +1,15 @@
-import { number, string, oneOfType, bool, node } from 'prop-types';
+import { string, bool, node } from 'prop-types';
 
-const Input = ({ placeholder, type, value, className, reference, required = false }) => (
+type InputProps = {
+    placeholder: string;
+    type: string;
+    value?: [string];
+    className?: string;
+    reference: any;
+    required?: boolean;
+};
+
+const Input: React.FC<InputProps> = ({ placeholder, type, value, className, reference, required = false }: InputProps) => (
     <input
         placeholder={placeholder}
         type={type}
@@ -11,10 +20,9 @@ const Input = ({ placeholder, type, value, className, reference, required = fals
     />
 );
 
-Input.propsTypes = {
+Input.propTypes = {
     type: string.isRequired,
     placeholder: string.isRequired,
-    value: oneOfType([string, number]),
     className: string,
     reference: node,
     required: bool

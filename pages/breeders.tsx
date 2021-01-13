@@ -7,7 +7,7 @@ import Modal from '../components/Modal/Modal';
 
 const DynamicMessenger = dynamic(() => import('../components/Messenger/Messenger'), { ssr: false });
 
-const breeders = () => {
+const Breeders: React.FC = () => {
     const [isModalOpen, setModal] = useState(false);
 
     const toggleModal = (modalStatus) => {
@@ -24,4 +24,4 @@ const breeders = () => {
     );
 };
 
-export default breeders;
+export default Breeders;

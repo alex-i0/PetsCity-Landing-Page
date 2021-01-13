@@ -18,7 +18,7 @@ const appStatistics = [
     }
 ];
 
-const Counter = () => (
+const Counter: React.FC = () => (
     <div className="counter-container">
         <div className="counter-card">
             {appStatistics.map(({ title, number, monthlyChange }, index) => (
