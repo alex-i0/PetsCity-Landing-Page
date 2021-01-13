@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TextSwitch = () => (
     <div className="content">
         <div className="content__container">

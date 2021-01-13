@@ -1,4 +1,3 @@
-import React from 'react';
 import InstagramIcon from '../../public/assets/instagram-icon.svg';
 import FacebookIcon from '../../public/assets/facebook-icon.svg';
 import LinkedinIcon from '../../public/assets/linkedin-icon.svg';

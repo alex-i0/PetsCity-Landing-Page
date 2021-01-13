@@ -1,7 +1,3 @@
-import React from 'react';
-
-//CSS to refactor
-
 const Checkbox = () => (
     <label className="checkbox path">
         Agree Data Policy
