@@ -42,7 +42,14 @@ const Header = () => {
                 </div>
             </header>
             <div className="image-container">
-                <Image src="/assets/animal-header.svg" width={900} height={900} className="header-image" loading="eager" />
+                <Image
+                    src="/assets/animal-header.svg"
+                    width={900}
+                    height={900}
+                    className="header-image"
+                    loading="eager"
+                    alt="People choosing their new pet from PetsCity."
+                />
             </div>
         </View>
     );

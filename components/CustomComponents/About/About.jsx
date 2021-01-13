@@ -25,7 +25,7 @@ const About = () => (
                 </Typography>
             </div>
             <div className="image-container">
-                <Image src="/assets/about-person.svg" width={700} height={700} loading="eager" />
+                <Image src="/assets/about-person.svg" width={700} height={700} loading="eager" alt="Happy client with a new dog." />
             </div>
         </div>
     </View>

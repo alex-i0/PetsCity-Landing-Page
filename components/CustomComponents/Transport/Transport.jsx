@@ -7,7 +7,13 @@ const Transport = () => {
         <View id="transport">
             <div className="transport-container">
                 <div className="image-container">
-                    <Image src="/assets/world-map.svg" width={700} height={700} loading="eager" />
+                    <Image
+                        src="/assets/world-map.svg"
+                        width={700}
+                        height={700}
+                        loading="eager"
+                        alt="World map presenting the range of PetsCity."
+                    />
                 </div>
                 <div className="text-container">
                     <Typography type="display" size="small">

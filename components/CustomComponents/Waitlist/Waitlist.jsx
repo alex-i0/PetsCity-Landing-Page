@@ -29,7 +29,14 @@ const Waitlist = () => {
                     </Button>
                 </div>
                 <div className="waitlist-image-container">
-                    <Image src="/assets/waitlist-icon.svg" width={600} height={600} className="waitlist-image" loading="eager" />
+                    <Image
+                        src="/assets/waitlist-icon.svg"
+                        width={600}
+                        height={600}
+                        className="waitlist-image"
+                        loading="eager"
+                        alt="A person waiting for a PetsCity app launch."
+                    />
                 </div>
             </View>
         </>

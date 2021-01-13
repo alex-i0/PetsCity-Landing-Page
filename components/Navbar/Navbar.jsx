@@ -25,7 +25,14 @@ const Navbar = ({ buttonText = 'Placeholder', buttonLink = '/' }) => {
         <nav className="nav">
             <Link href="/">
                 <div className="logo">
-                    <Image className="logoImg" src="/assets/pets-city-logo.png" height={62} width={62} loading="eager" />
+                    <Image
+                        className="logoImg"
+                        src="/assets/pets-city-logo.png"
+                        height={62}
+                        width={62}
+                        loading="eager"
+                        alt="PetsCity logo."
+                    />
                     <Typography type="display-bold" size="small" className="logo">
                         PetsCity
                     </Typography>
