@@ -19,11 +19,11 @@ const Transport = () => {
                         <br />
                         <br />
                         Thanks to our partnership with the certified transporting firms,{' '}
-                        <a href="http://www.quick-trans.co.uk" target="_blank" className="partner">
+                        <a href="http://www.quick-trans.co.uk" rel="noreferrer" target="_blank" className="partner">
                             QuickTrans{' '}
                         </a>
                         and{' '}
-                        <a href="http://petstravel.eu/" target="_blank" className="partner">
+                        <a href="http://petstravel.eu/" rel="noreferrer" target="_blank" className="partner">
                             PetsTravel
                         </a>
                         , we handle transport for you. Safe and stressful for your future pet!

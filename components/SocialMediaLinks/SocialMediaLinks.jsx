@@ -6,19 +6,19 @@ import Link from 'next/link';
 const SocialMediaLink = () => (
     <div className="link-group">
         <Link href="https://www.instagram.com/transservicetransport/">
-            <a target="_blank">
+            <a target="_blank" rel="noreferrer">
                 <InstagramIcon />
             </a>
         </Link>
 
         <Link href="https://www.facebook.com/pets.city1">
-            <a target="_blank">
+            <a target="_blank" rel="noreferrer">
                 <FacebookIcon />
             </a>
         </Link>
 
         <Link href="https://www.linkedin.com/feed/">
-            <a target="_blank">
+            <a target="_blank" rel="noreferrer">
                 <LinkedinIcon />
             </a>
         </Link>
