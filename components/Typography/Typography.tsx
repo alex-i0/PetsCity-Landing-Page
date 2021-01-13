@@ -1,7 +1,7 @@
 import { string } from 'prop-types';
 
 type TypographyProps = {
-    children: React.ReactChild;
+    children: unknown;
     type?: string;
     size?: string;
     style?: Record<string, unknown>;

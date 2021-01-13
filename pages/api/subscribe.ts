@@ -1,7 +1,8 @@
 import fetch from 'isomorphic-unfetch';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
-export default async (req, res) => {
-    const { email } = req.body;
+export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
+    const { email }: { email: string } = req.body;
 
     if (!email) {
         return res.status(400).json({ error: 'Email is required' });
@@ -35,8 +36,6 @@ export default async (req, res) => {
                 error: `There was an error subscribing to the newsletter. Shoot us an email at [hello@pets.city] and we'll add you to the list.`
             });
         }
-
-        // 8. If we made it this far, it was a success! 🎉
         return res.status(201).json({ error: '' });
     } catch (error) {
         return res.status(500).json({ error: error.message || error.toString() });

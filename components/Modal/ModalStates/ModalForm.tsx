@@ -2,15 +2,16 @@ import Input from '../../Input/Input';
 import Button from '../../Button/Button';
 import Checkbox from '../../Checkbox/Checkbox';
 import Link from 'next/link';
+import { ReactNode } from 'react';
 
 type ModalFormPropTypes = {
-    signUp: void,
-    inputEl: reference,
-    toggleModal: void
+    signUp: any;
+    inputEl: ReactNode;
+    toggleModal: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 const ModalForm: React.FC<ModalFormPropTypes> = ({ signUp, inputEl, toggleModal }: ModalFormPropTypes) => (
-    <form onSubmit={(e) => signUp(e)} action={false}>
+    <form onSubmit={(e) => signUp(e)}>
         <Input placeholder="email" type="email" reference={inputEl} required />
         <div className="checkbox-holder">
             <Checkbox />

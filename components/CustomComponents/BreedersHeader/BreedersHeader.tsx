@@ -10,7 +10,7 @@ type BreedersHeaderPropTypes = {
 const BreedersHeader: React.FC<BreedersHeaderPropTypes> = ({ onClick }: BreedersHeaderPropTypes) => (
     <View>
         <header className="breeders-header">
-            <BusinessCard title="💼 Business Transparency" />
+            <BusinessCard />
             <div className="text-container">
                 <Typography type="display-bold" size="medium">
                     The future of global breeding is in your hands 🙌
@@ -29,7 +29,7 @@ const BreedersHeader: React.FC<BreedersHeaderPropTypes> = ({ onClick }: Breeders
                     Expose yourself to new horizons.
                 </Typography>
                 <Button className="breeders-button" onClick={onClick}>
-                    Let's Work Together
+                    Let&apos;s Work Together
                 </Button>
             </div>
         </header>

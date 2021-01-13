@@ -1,7 +1,8 @@
 import { node, bool, string } from 'prop-types';
+import { ReactNode } from 'react';
 
 type ViewPropTypes = {
-    children: React.ReactChild;
+    children: ReactNode;
     padding?: boolean;
     className?: string;
     id?: string;

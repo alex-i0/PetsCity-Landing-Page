@@ -1,11 +1,11 @@
-import { string, bool, node } from 'prop-types';
+import { string, bool } from 'prop-types';
 
 type InputProps = {
     placeholder: string;
     type: string;
     value?: [string];
     className?: string;
-    reference: any;
+    reference: React.MutableRefObject<HTMLInputElement>;
     required?: boolean;
 };
 
@@ -24,7 +24,6 @@ Input.propTypes = {
     type: string.isRequired,
     placeholder: string.isRequired,
     className: string,
-    reference: node,
     required: bool
 };
 

@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 
-const subscribe = async (setMessage, setStatus, inputReference) => {
+const subscribe = async (setMessage: Dispatch, setStatus: Dispatch, inputReference: React.MutableRefObject<HTMLInputElement>) => {
     const res = await fetch('/api/subscribe', {
         body: JSON.stringify({
             email: inputReference.current.value

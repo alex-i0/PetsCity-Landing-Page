@@ -20,8 +20,8 @@ const About: React.FC = () => (
                     from a<span style={{ fontWeight: 'bold' }}> good home</span>🏠.
                     <br />
                     <br />
-                    We believe in love at first sight. However, sometimes it's not that easy. That's why we offer you the possibility to
-                    consider over 2300 pets.
+                    We believe in love at first sight. However, sometimes it&apos;s not that easy. That&apos;s why we offer you the
+                    possibility to consider over 2300 pets.
                 </Typography>
             </div>
             <div className="image-container">

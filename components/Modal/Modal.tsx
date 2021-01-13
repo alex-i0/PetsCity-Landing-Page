@@ -9,14 +9,14 @@ import { motion } from 'framer-motion';
 
 type ModalPropTypes = {
     isModalOpen: boolean;
-    toggleModal: void;
+    toggleModal: React.MouseEventHandler<HTMLDivElement>;
 };
 
 const Modal: React.FC<ModalPropTypes> = ({ isModalOpen, toggleModal }: ModalPropTypes) => {
     const [pageYOffset, setPageYOffset] = useState(null);
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState(null);
-    const inputEl = useRef(null);
+    const inputEl = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
         setPageYOffset(window.pageYOffset);
@@ -27,7 +27,7 @@ const Modal: React.FC<ModalPropTypes> = ({ isModalOpen, toggleModal }: ModalProp
         }
     }, [isModalOpen]);
 
-    const signUpForMailSubscription = (event) => {
+    const signUpForMailSubscription = (event: Event): void => {
         subscribe(setMessage, setStatus, inputEl);
         event.preventDefault();
     };

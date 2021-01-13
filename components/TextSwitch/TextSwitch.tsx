@@ -1,4 +1,4 @@
-const TextSwitch = () => (
+const TextSwitch: React.FC = () => (
     <div className="content">
         <div className="content__container">
             <p className="content__container__text">Choose Your </p>
