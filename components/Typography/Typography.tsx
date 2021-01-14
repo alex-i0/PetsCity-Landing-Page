@@ -1,9 +1,12 @@
-import { string, object, number, oneOfType, node } from 'prop-types';
+import { string, object, number, oneOfType, node, oneOf } from 'prop-types';
+
+type Size = 'x-small' | 'small' | 'medium' | 'large';
+type Type = 'display' | 'display-bold' | 'link' | 'text';
 
 type TypographyProps = {
     children: unknown;
-    type?: string;
-    size?: string;
+    type?: Type;
+    size?: Size;
     style?: Record<string, unknown>;
     className?: string;
 };
@@ -16,8 +19,8 @@ const Typography: React.FC<TypographyProps> = ({ children, type = null, style = 
 
 Typography.propTypes = {
     children: oneOfType([string, object, number, node]),
-    type: string,
-    size: string,
+    type: oneOf(['display', 'display-bold', 'link', 'text']),
+    size: oneOf(['x-small', 'small', 'medium', 'large']),
     className: string
 };
 

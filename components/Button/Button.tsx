@@ -1,7 +1,10 @@
+type Size = 'medium' | 'small';
+type Type = 'subtle';
+
 type ButtonProps = {
     children: string;
-    size?: string;
-    type?: string;
+    size?: Size;
+    type?: Type;
     className?: string;
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
