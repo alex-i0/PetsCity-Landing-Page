@@ -9,12 +9,12 @@ import { motion } from 'framer-motion';
 
 type ModalPropTypes = {
     isModalOpen: boolean;
-    toggleModal: React.MouseEventHandler<HTMLDivElement>;
+    toggleModal: React.MouseEventHandler;
 };
 
 const Modal: React.FC<ModalPropTypes> = ({ isModalOpen, toggleModal }: ModalPropTypes) => {
     const [pageYOffset, setPageYOffset] = useState(null);
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState(null);
     const [status, setStatus] = useState(null);
     const inputEl = useRef<HTMLInputElement>(null);
 

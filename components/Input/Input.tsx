@@ -5,7 +5,7 @@ type InputProps = {
     type: string;
     value?: [string];
     className?: string;
-    reference: React.MutableRefObject<HTMLInputElement>;
+    reference?: React.LegacyRef<HTMLInputElement>;
     required?: boolean;
 };
 

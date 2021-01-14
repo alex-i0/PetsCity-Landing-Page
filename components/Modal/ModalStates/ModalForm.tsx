@@ -2,11 +2,10 @@ import Input from '../../Input/Input';
 import Button from '../../Button/Button';
 import Checkbox from '../../Checkbox/Checkbox';
 import Link from 'next/link';
-import { ReactNode } from 'react';
 
 type ModalFormPropTypes = {
-    signUp: any;
-    inputEl: ReactNode;
+    signUp: (Event) => void;
+    inputEl: React.RefObject<HTMLInputElement>;
     toggleModal: React.MouseEventHandler<HTMLButtonElement>;
 };
 

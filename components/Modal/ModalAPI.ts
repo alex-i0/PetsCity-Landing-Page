@@ -1,6 +1,11 @@
 import fetch from 'isomorphic-unfetch';
+import { SetStateAction } from 'react';
 
-const subscribe = async (setMessage: Dispatch, setStatus: Dispatch, inputReference: React.MutableRefObject<HTMLInputElement>) => {
+const subscribe = async (
+    setMessage: React.Dispatch<SetStateAction<string>>,
+    setStatus: React.Dispatch<SetStateAction<boolean>>,
+    inputReference: React.MutableRefObject<HTMLInputElement>
+): Promise<void> => {
     const res = await fetch('/api/subscribe', {
         body: JSON.stringify({
             email: inputReference.current.value
@@ -11,7 +16,9 @@ const subscribe = async (setMessage: Dispatch, setStatus: Dispatch, inputReferen
         method: 'POST'
     });
 
-    const { error } = await res.json();
+    const { error }: { error: 'string' } = await res.json();
+
+    console.log(typeof setMessage);
 
     if (error) {
         setStatus(false);

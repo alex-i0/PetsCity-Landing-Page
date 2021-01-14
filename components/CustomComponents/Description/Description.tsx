@@ -10,7 +10,7 @@ const Description: React.FC = () => (
                 </Typography>
                 <br />
                 <Typography type="text" size="medium">
-                    More than an business, it's an experience
+                    More than an business, it&apos;s an experience
                 </Typography>
             </div>
 
@@ -47,7 +47,7 @@ const Description: React.FC = () => (
                 </Typography>
                 <hr />
                 <Typography type="text" size="small">
-                    Don't struggle with collecting your pet. We will deliver it right to your doors. It couldn't be easier.
+                    Don&apos;t struggle with collecting your pet. We will deliver it right to your doors. It couldn&apos;t be easier.
                 </Typography>
             </div>
         </div>

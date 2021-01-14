@@ -17,7 +17,7 @@ const Header: React.FC = () => {
                     <TextSwitch />
                 </Typography>
                 <Typography type="display-bold" size="medium">
-                    We'll handle the rest.
+                    We&apos;ll handle the rest.
                 </Typography>
                 <br />
                 <div className="subtext">
