@@ -14,7 +14,7 @@ type ModalPropTypes = {
 
 const Modal: React.FC<ModalPropTypes> = ({ isModalOpen, toggleModal }: ModalPropTypes) => {
     const [pageYOffset, setPageYOffset] = useState(null);
-    const [message, setMessage] = useState(null);
+    const [message, setMessage] = useState('');
     const [status, setStatus] = useState(null);
     const inputEl = useRef<HTMLInputElement>(null);
 

@@ -1,4 +1,4 @@
-import { string } from 'prop-types';
+import { string, object, number, oneOfType, node } from 'prop-types';
 
 type TypographyProps = {
     children: unknown;
@@ -15,7 +15,7 @@ const Typography: React.FC<TypographyProps> = ({ children, type = null, style = 
 );
 
 Typography.propTypes = {
-    children: string.isRequired,
+    children: oneOfType([string, object, number, node]),
     type: string,
     size: string,
     className: string

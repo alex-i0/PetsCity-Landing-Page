@@ -12,11 +12,11 @@ const ModalStatus: React.FC<ModalStatusPropTypes> = ({ subscriptionMessage, subs
         <>
             <span className={`status-bar --${status}`}>
                 <Typography type="link" size="small" className={`status-text --${status}`}>
-                    {status}
+                    {`${status}`}
                 </Typography>
             </span>
             <Typography type="text" size="medium">
-                {subscriptionMessage}
+                {`${subscriptionMessage}`}
             </Typography>
         </>
     );
