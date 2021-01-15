@@ -1,5 +1,5 @@
 div.waitlist-container {
-    width: 50%;
+    flex: 1;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,25 +21,22 @@ div.waitlist-container {
 
 div.waitlist-image-container {
     background-color: $background-grayscale;
-    width: 50%;
+    flex: 1;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top-left-radius: $border-radius;
-
-    .waitlist-image {
-        width: 100px;
-        height: 50vh;
-        display: none;
-    }
 }
 
 @media only screen and (max-width: $breakpoint-phone) {
     div.waitlist-container {
-        width: 100%;
         height: auto;
         padding: 3rem;
+
+        span.heading {
+            margin-bottom: 1.5rem;
+        }
 
         button.waitlist-button {
             margin: auto;
@@ -48,7 +45,6 @@ div.waitlist-image-container {
     }
 
     div.waitlist-image-container {
-        width: 100%;
         height: auto;
     }
 }

@@ -1,5 +1,5 @@
 header.index-header {
-    width: 50%;
+    flex: 1;
     color: $font-color;
 
     h1.title {
@@ -25,11 +25,7 @@ header.index-header {
 div.image-container {
     display: flex;
     justify-content: center;
-    width: 50%;
-
-    .header-image {
-        width: 100%;
-    }
+    flex: 1;
 }
 
 @media only screen and (max-width: $breakpoint-phone) {

@@ -44,8 +44,8 @@ const Header: React.FC = () => {
             <div className="image-container">
                 <Image
                     src="/assets/animal-header.svg"
-                    width={900}
-                    height={900}
+                    width={650}
+                    height={650}
                     className="header-image"
                     loading="eager"
                     alt="People choosing their new pet from PetsCity."

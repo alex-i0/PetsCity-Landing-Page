@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
         </div>
         <span className="copyright">
             <Typography type={'text'} size={'x-small'}>
-                Copyright © 2019-2020 Pets.City. All rights reserved.
+                {`Copyright © ${new Date().getFullYear()} PetsCity. All rights reserved.`}
             </Typography>
         </span>
         <span className="policy-link">

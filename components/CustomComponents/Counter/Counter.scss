@@ -45,6 +45,6 @@
 
 @media only screen and (max-width: $breakpoint-phone) {
     .counter-container {
-        flex-direction: column;
+        display: none;
     }
 }
