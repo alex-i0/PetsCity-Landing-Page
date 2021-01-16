@@ -4,9 +4,20 @@ import Button from '../../Button/Button';
 import Typography from '../../Typography/Typography';
 import Image from 'next/image';
 import Modal from '../../Modal/Modal';
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
 
 const Waitlist: React.FC = () => {
     const [isModalOpen, setModal] = useState(false);
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            controls.start('visible');
+        }
+    }, [controls, inView]);
 
     const toggleModal = (modalStatus) => {
         setModal(!modalStatus);
@@ -16,7 +27,17 @@ const Waitlist: React.FC = () => {
         <>
             <Modal isModalOpen={isModalOpen} toggleModal={toggleModal} />
             <View padding={false} id="waitlist">
-                <div className="waitlist-container">
+                <motion.div
+                    ref={ref}
+                    animate={controls}
+                    variants={{
+                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0, x: -100 }
+                    }}
+                    initial="hidden"
+                    transition={{ duration: 0.6 }}
+                    className="waitlist-container"
+                >
                     <Typography type="display" size="small" className="heading">
                         <span className="highlight">PetsCity</span> is coming to Europe 🇪🇺
                     </Typography>
@@ -27,7 +48,7 @@ const Waitlist: React.FC = () => {
                     <Button size="medium" className="waitlist-button" onClick={() => toggleModal(isModalOpen)}>
                         Join Waitlist
                     </Button>
-                </div>
+                </motion.div>
                 <div className="waitlist-image-container">
                     <Image
                         src="/assets/waitlist-icon.svg"

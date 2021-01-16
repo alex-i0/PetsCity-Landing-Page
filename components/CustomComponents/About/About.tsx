@@ -17,20 +17,21 @@ const About: React.FC = () => {
     return (
         <View>
             <div className="about-container">
-                <div className="text-content">
+                <motion.div
+                    ref={ref}
+                    animate={controls}
+                    variants={{
+                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0, x: -100 }
+                    }}
+                    initial="hidden"
+                    transition={{ duration: 0.6 }}
+                    className="text-content"
+                >
                     <Typography type={'display-bold'} size={'medium'}>
                         We Are Here To Connect 🐾
                     </Typography>
-                    <motion.div
-                        ref={ref}
-                        animate={controls}
-                        variants={{
-                            visible: { opacity: 1, x: 0 },
-                            hidden: { opacity: 0, x: -100 }
-                        }}
-                        initial="hidden"
-                        transition={{ duration: 0.6 }}
-                    >
+                    <div>
                         <Typography type={'text'} size={'small'}>
                             <br />
                             <br />
@@ -45,8 +46,8 @@ const About: React.FC = () => {
                             We believe in love at first sight. However, sometimes it&apos;s not that easy. That&apos;s why we offer you the
                             possibility to consider over 2300 pets.
                         </Typography>
-                    </motion.div>
-                </div>
+                    </div>
+                </motion.div>
                 <div className="image-container">
                     <Image src="/assets/about-person.svg" width={700} height={700} loading="eager" alt="Happy client with a new dog." />
                 </div>
