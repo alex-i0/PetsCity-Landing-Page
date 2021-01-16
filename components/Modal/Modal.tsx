@@ -43,7 +43,7 @@ const Modal: React.FC<ModalPropTypes> = ({ isModalOpen, toggleModal }: ModalProp
             <div className="card">
                 <CloseIcon className="close-icon" onClick={toggleModal} />
                 <Typography type="display" size="small">
-                    Welcome in PetsCity
+                    Welcome in PetsCity😻
                 </Typography>
                 {message === '' ? (
                     <ModalForm signUp={signUpForMailSubscription} inputEl={inputEl} toggleModal={toggleModal} />
